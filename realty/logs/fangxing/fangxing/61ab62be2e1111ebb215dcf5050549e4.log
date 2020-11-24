@@ -1,0 +1,2494 @@
+2020-11-24 12:56:26 [scrapy.utils.log] INFO: Scrapy 1.8.0 started (bot: realty_spider)
+2020-11-24 12:56:26 [scrapy.utils.log] INFO: Versions: lxml 4.5.0.0, libxml2 2.9.5, cssselect 1.1.0, parsel 1.5.2, w3lib 1.21.0, Twisted 19.10.0, Python 3.8.6 (tags/v3.8.6:db45529, Sep 23 2020, 15:52:53) [MSC v.1927 64 bit (AMD64)], pyOpenSSL 19.1.0 (OpenSSL 1.1.1d  10 Sep 2019), cryptography 2.8, Platform Windows-10-10.0.19041-SP0
+2020-11-24 12:56:26 [scrapy.crawler] INFO: Overridden settings: {'BOT_NAME': 'realty_spider', 'DOWNLOAD_DELAY': 0.5, 'LOG_FILE': 'logs\\fangxing\\fangxing\\61ab62be2e1111ebb215dcf5050549e4.log', 'NEWSPIDER_MODULE': 'realty_spider.realty_spider.spiders', 'SPIDER_MODULES': ['realty_spider.realty_spider.spiders']}
+2020-11-24 12:56:26 [scrapy.extensions.telnet] INFO: Telnet Password: 9e2ad066bf6e5616
+2020-11-24 12:56:26 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.logstats.LogStats']
+2020-11-24 12:56:27 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2020-11-24 12:56:27 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2020-11-24 12:56:27 [scrapy.middleware] INFO: Enabled item pipelines:
+['realty_spider.realty_spider.pipelines.FangxingErshouPipeline',
+ 'realty_spider.realty_spider.pipelines.FangxingXiaoquPipeline']
+2020-11-24 12:56:27 [scrapy.core.engine] INFO: Spider opened
+2020-11-24 12:56:27 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2020-11-24 12:56:27 [scrapy.extensions.telnet] INFO: Telnet console listening on 127.0.0.1:6024
+2020-11-24 12:56:27 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.fangstar.com/xiaoqu/%7B%7Dxishangqu> (referer:  https://www.fangstar.com/)
+2020-11-24 12:56:28 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.fangstar.com/xiaoqu/%7B%7Dxishangquwuhuaqu> (referer:  https://www.fangstar.com/)
+2020-11-24 12:56:28 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.fangstar.com/xiaoqu/%7B%7Dxishangquwuhuaqulanlongqu> (referer:  https://www.fangstar.com/)
+2020-11-24 12:56:28 [scrapy.dupefilters] DEBUG: Filtered duplicate request: <GET https://www.fangstar.com/xiaoqu/detail/1675> - no more duplicates will be shown (see DUPEFILTER_DEBUG to show all duplicates)
+2020-11-24 12:56:29 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.fangstar.com/xiaoqu/%7B%7Dxishangquwuhuaqulanlongquchenggongqu> (referer:  https://www.fangstar.com/)
+2020-11-24 12:56:29 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.fangstar.com/xiaoqu/%7B%7Dxishangquwuhuaqulanlongquchenggongquans> (referer:  https://www.fangstar.com/)
+2020-11-24 12:56:30 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.fangstar.com/xiaoqu/%7B%7Dxishangquwuhuaqulanlongquchenggongquansjnq> (referer:  https://www.fangstar.com/)
+2020-11-24 12:56:30 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.fangstar.com/xiaoqu/%7B%7Dxishangquwuhuaqulanlongquchenggongquansjnqsmx> (referer:  https://www.fangstar.com/)
+2020-11-24 12:56:31 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.fangstar.com/xiaoqu/%7B%7Dxishangquwuhuaqulanlongquchenggongquansjnqsmxylx> (referer:  https://www.fangstar.com/)
+2020-11-24 12:56:31 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.fangstar.com/xiaoqu/%7B%7Dxishangquwuhuaqulanlongquchenggongquansjnqsmxylxfnx> (referer:  https://www.fangstar.com/)
+2020-11-24 12:56:32 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.fangstar.com/xiaoqu/detail/1675> (referer: https://www.fangstar.com/xiaoqu/%7B%7Dxishangqu)
+2020-11-24 12:56:32 [asyncio] DEBUG: Using proactor: IocpProactor
+2020-11-24 12:56:32 [scrapy.core.scraper] ERROR: Error processing {'address': '西山区-红联片区',
+ 'community': None,
+ 'house_type': None,
+ 'publish_time': None,
+ 'surrounding_school': '\r\n'
+                       '                                    距离地铁3号线梁家河站897m',
+ 'total_price': '15946万',
+ 'url': 'https://www.fangstar.com/xiaoqu/detail/1675',
+ 'uuid': None}
+Traceback (most recent call last):
+  File "e:\py38\lib\site-packages\twisted\internet\defer.py", line 654, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "h:\python-练习\items\realty\realty_spider\realty_spider\pipelines.py", line 19, in process_item
+    item['publish_time'] = item['publish_time'].strip() #去空格
+AttributeError: 'NoneType' object has no attribute 'strip'
+2020-11-24 12:56:33 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.fangstar.com/xiaoqu/detail/1294> (referer: https://www.fangstar.com/xiaoqu/%7B%7Dxishangqu)
+2020-11-24 12:56:33 [scrapy.core.scraper] ERROR: Error processing {'address': '西山区-省高院片区',
+ 'community': None,
+ 'house_type': None,
+ 'publish_time': None,
+ 'surrounding_school': '福海杨家中心学校',
+ 'total_price': '14474万',
+ 'url': 'https://www.fangstar.com/xiaoqu/detail/1294',
+ 'uuid': None}
+Traceback (most recent call last):
+  File "e:\py38\lib\site-packages\twisted\internet\defer.py", line 654, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "h:\python-练习\items\realty\realty_spider\realty_spider\pipelines.py", line 19, in process_item
+    item['publish_time'] = item['publish_time'].strip() #去空格
+AttributeError: 'NoneType' object has no attribute 'strip'
+2020-11-24 12:56:34 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.fangstar.com/xiaoqu/detail/1289> (referer: https://www.fangstar.com/xiaoqu/%7B%7Dxishangqu)
+2020-11-24 12:56:34 [scrapy.core.scraper] ERROR: Error processing {'address': '西山区-滇池卫城片区',
+ 'community': None,
+ 'house_type': None,
+ 'publish_time': None,
+ 'surrounding_school': '滇池度假区实验学校',
+ 'total_price': '26860万',
+ 'url': 'https://www.fangstar.com/xiaoqu/detail/1289',
+ 'uuid': None}
+Traceback (most recent call last):
+  File "e:\py38\lib\site-packages\twisted\internet\defer.py", line 654, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "h:\python-练习\items\realty\realty_spider\realty_spider\pipelines.py", line 19, in process_item
+    item['publish_time'] = item['publish_time'].strip() #去空格
+AttributeError: 'NoneType' object has no attribute 'strip'
+2020-11-24 12:56:34 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.fangstar.com/xiaoqu/detail/1287> (referer: https://www.fangstar.com/xiaoqu/%7B%7Dxishangqu)
+2020-11-24 12:56:34 [scrapy.core.scraper] ERROR: Error processing {'address': '西山区-滇池度假区',
+ 'community': None,
+ 'house_type': None,
+ 'publish_time': None,
+ 'surrounding_school': '滇池度假区第二小学',
+ 'total_price': '20000万',
+ 'url': 'https://www.fangstar.com/xiaoqu/detail/1287',
+ 'uuid': None}
+Traceback (most recent call last):
+  File "e:\py38\lib\site-packages\twisted\internet\defer.py", line 654, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "h:\python-练习\items\realty\realty_spider\realty_spider\pipelines.py", line 19, in process_item
+    item['publish_time'] = item['publish_time'].strip() #去空格
+AttributeError: 'NoneType' object has no attribute 'strip'
+2020-11-24 12:56:35 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.fangstar.com/xiaoqu/detail/1281> (referer: https://www.fangstar.com/xiaoqu/%7B%7Dxishangqu)
+2020-11-24 12:56:35 [scrapy.core.scraper] ERROR: Error processing {'address': '西山区-省高院片区',
+ 'community': None,
+ 'house_type': None,
+ 'publish_time': None,
+ 'surrounding_school': '中华小学（西山学校）',
+ 'total_price': '35557万',
+ 'url': 'https://www.fangstar.com/xiaoqu/detail/1281',
+ 'uuid': None}
+Traceback (most recent call last):
+  File "e:\py38\lib\site-packages\twisted\internet\defer.py", line 654, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "h:\python-练习\items\realty\realty_spider\realty_spider\pipelines.py", line 19, in process_item
+    item['publish_time'] = item['publish_time'].strip() #去空格
+AttributeError: 'NoneType' object has no attribute 'strip'
+2020-11-24 12:56:35 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.fangstar.com/xiaoqu/detail/1279> (referer: https://www.fangstar.com/xiaoqu/%7B%7Dxishangqu)
+2020-11-24 12:56:35 [scrapy.core.scraper] ERROR: Error processing {'address': '西山区-滇池卫城片区',
+ 'community': None,
+ 'house_type': None,
+ 'publish_time': None,
+ 'surrounding_school': '滇池度假区实验学校',
+ 'total_price': '32187万',
+ 'url': 'https://www.fangstar.com/xiaoqu/detail/1279',
+ 'uuid': None}
+Traceback (most recent call last):
+  File "e:\py38\lib\site-packages\twisted\internet\defer.py", line 654, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "h:\python-练习\items\realty\realty_spider\realty_spider\pipelines.py", line 19, in process_item
+    item['publish_time'] = item['publish_time'].strip() #去空格
+AttributeError: 'NoneType' object has no attribute 'strip'
+2020-11-24 12:56:36 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.fangstar.com/xiaoqu/detail/1275> (referer: https://www.fangstar.com/xiaoqu/%7B%7Dxishangqu)
+2020-11-24 12:56:36 [scrapy.core.scraper] ERROR: Error processing {'address': '西山区-大商汇片区',
+ 'community': None,
+ 'house_type': None,
+ 'publish_time': None,
+ 'surrounding_school': '前卫南坝中心学校',
+ 'total_price': None,
+ 'url': 'https://www.fangstar.com/xiaoqu/detail/1275',
+ 'uuid': None}
+Traceback (most recent call last):
+  File "e:\py38\lib\site-packages\twisted\internet\defer.py", line 654, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "h:\python-练习\items\realty\realty_spider\realty_spider\pipelines.py", line 19, in process_item
+    item['publish_time'] = item['publish_time'].strip() #去空格
+AttributeError: 'NoneType' object has no attribute 'strip'
+2020-11-24 12:56:37 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.fangstar.com/xiaoqu/detail/4831> (referer: https://www.fangstar.com/xiaoqu/%7B%7Dxishangqu)
+2020-11-24 12:56:37 [scrapy.core.scraper] ERROR: Error processing {'address': '五华区-虹山片区',
+ 'community': None,
+ 'house_type': None,
+ 'publish_time': None,
+ 'surrounding_school': '虹山小学',
+ 'total_price': '12128万',
+ 'url': 'https://www.fangstar.com/xiaoqu/detail/4831',
+ 'uuid': None}
+Traceback (most recent call last):
+  File "e:\py38\lib\site-packages\twisted\internet\defer.py", line 654, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "h:\python-练习\items\realty\realty_spider\realty_spider\pipelines.py", line 19, in process_item
+    item['publish_time'] = item['publish_time'].strip() #去空格
+AttributeError: 'NoneType' object has no attribute 'strip'
+2020-11-24 12:56:38 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.fangstar.com/xiaoqu/pg2> (referer: https://www.fangstar.com/xiaoqu/%7B%7Dxishangqu)
+2020-11-24 12:56:38 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.fangstar.com/xiaoqu/detail/1351> (referer: https://www.fangstar.com/xiaoqu/%7B%7Dxishangqu)
+2020-11-24 12:56:38 [scrapy.core.scraper] ERROR: Error processing {'address': '西山区-大商汇片区',
+ 'community': None,
+ 'house_type': None,
+ 'publish_time': None,
+ 'surrounding_school': '中华小学（西山学校）',
+ 'total_price': '14892万',
+ 'url': 'https://www.fangstar.com/xiaoqu/detail/1351',
+ 'uuid': None}
+Traceback (most recent call last):
+  File "e:\py38\lib\site-packages\twisted\internet\defer.py", line 654, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "h:\python-练习\items\realty\realty_spider\realty_spider\pipelines.py", line 19, in process_item
+    item['publish_time'] = item['publish_time'].strip() #去空格
+AttributeError: 'NoneType' object has no attribute 'strip'
+2020-11-24 12:56:38 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.fangstar.com/xiaoqu/detail/1350> (referer: https://www.fangstar.com/xiaoqu/%7B%7Dxishangqu)
+2020-11-24 12:56:39 [scrapy.core.scraper] ERROR: Error processing {'address': '西山区-省高院片区',
+ 'community': None,
+ 'house_type': None,
+ 'publish_time': None,
+ 'surrounding_school': '中华小学（西山学校）',
+ 'total_price': '19177万',
+ 'url': 'https://www.fangstar.com/xiaoqu/detail/1350',
+ 'uuid': None}
+Traceback (most recent call last):
+  File "e:\py38\lib\site-packages\twisted\internet\defer.py", line 654, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "h:\python-练习\items\realty\realty_spider\realty_spider\pipelines.py", line 19, in process_item
+    item['publish_time'] = item['publish_time'].strip() #去空格
+AttributeError: 'NoneType' object has no attribute 'strip'
+2020-11-24 12:56:39 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.fangstar.com/xiaoqu/detail/1349> (referer: https://www.fangstar.com/xiaoqu/%7B%7Dxishangqu)
+2020-11-24 12:56:39 [scrapy.core.scraper] ERROR: Error processing {'address': '西山区-省高院片区',
+ 'community': None,
+ 'house_type': None,
+ 'publish_time': None,
+ 'surrounding_school': '中华小学（西山学校）',
+ 'total_price': '17028万',
+ 'url': 'https://www.fangstar.com/xiaoqu/detail/1349',
+ 'uuid': None}
+Traceback (most recent call last):
+  File "e:\py38\lib\site-packages\twisted\internet\defer.py", line 654, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "h:\python-练习\items\realty\realty_spider\realty_spider\pipelines.py", line 19, in process_item
+    item['publish_time'] = item['publish_time'].strip() #去空格
+AttributeError: 'NoneType' object has no attribute 'strip'
+2020-11-24 12:56:40 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.fangstar.com/xiaoqu/detail/1348> (referer: https://www.fangstar.com/xiaoqu/%7B%7Dxishangqu)
+2020-11-24 12:56:40 [scrapy.core.scraper] ERROR: Error processing {'address': '西山区-省高院片区',
+ 'community': None,
+ 'house_type': None,
+ 'publish_time': None,
+ 'surrounding_school': '中华小学（西山学校）',
+ 'total_price': '16254万',
+ 'url': 'https://www.fangstar.com/xiaoqu/detail/1348',
+ 'uuid': None}
+Traceback (most recent call last):
+  File "e:\py38\lib\site-packages\twisted\internet\defer.py", line 654, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "h:\python-练习\items\realty\realty_spider\realty_spider\pipelines.py", line 19, in process_item
+    item['publish_time'] = item['publish_time'].strip() #去空格
+AttributeError: 'NoneType' object has no attribute 'strip'
+2020-11-24 12:56:40 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.fangstar.com/xiaoqu/detail/1347> (referer: https://www.fangstar.com/xiaoqu/%7B%7Dxishangqu)
+2020-11-24 12:56:40 [scrapy.core.scraper] ERROR: Error processing {'address': '西山区-大商汇片区',
+ 'community': None,
+ 'house_type': None,
+ 'publish_time': None,
+ 'surrounding_school': '中华小学（西山学校）',
+ 'total_price': '14577万',
+ 'url': 'https://www.fangstar.com/xiaoqu/detail/1347',
+ 'uuid': None}
+Traceback (most recent call last):
+  File "e:\py38\lib\site-packages\twisted\internet\defer.py", line 654, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "h:\python-练习\items\realty\realty_spider\realty_spider\pipelines.py", line 19, in process_item
+    item['publish_time'] = item['publish_time'].strip() #去空格
+AttributeError: 'NoneType' object has no attribute 'strip'
+2020-11-24 12:56:41 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.fangstar.com/xiaoqu/detail/1346> (referer: https://www.fangstar.com/xiaoqu/%7B%7Dxishangqu)
+2020-11-24 12:56:41 [scrapy.core.scraper] ERROR: Error processing {'address': '西山区-大商汇片区',
+ 'community': None,
+ 'house_type': None,
+ 'publish_time': None,
+ 'surrounding_school': '中华小学（西山学校）',
+ 'total_price': '16182万',
+ 'url': 'https://www.fangstar.com/xiaoqu/detail/1346',
+ 'uuid': None}
+Traceback (most recent call last):
+  File "e:\py38\lib\site-packages\twisted\internet\defer.py", line 654, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "h:\python-练习\items\realty\realty_spider\realty_spider\pipelines.py", line 19, in process_item
+    item['publish_time'] = item['publish_time'].strip() #去空格
+AttributeError: 'NoneType' object has no attribute 'strip'
+2020-11-24 12:56:41 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.fangstar.com/xiaoqu/detail/1345> (referer: https://www.fangstar.com/xiaoqu/%7B%7Dxishangqu)
+2020-11-24 12:56:42 [scrapy.core.scraper] ERROR: Error processing {'address': '官渡区-关上片区',
+ 'community': None,
+ 'house_type': None,
+ 'publish_time': None,
+ 'surrounding_school': '\r\n'
+                       '                                    距离地铁1号线昆明火车站站1008m',
+ 'total_price': '14604万',
+ 'url': 'https://www.fangstar.com/xiaoqu/detail/1345',
+ 'uuid': None}
+Traceback (most recent call last):
+  File "e:\py38\lib\site-packages\twisted\internet\defer.py", line 654, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "h:\python-练习\items\realty\realty_spider\realty_spider\pipelines.py", line 19, in process_item
+    item['publish_time'] = item['publish_time'].strip() #去空格
+AttributeError: 'NoneType' object has no attribute 'strip'
+2020-11-24 12:56:42 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.fangstar.com/xiaoqu/detail/1344> (referer: https://www.fangstar.com/xiaoqu/%7B%7Dxishangqu)
+2020-11-24 12:56:42 [scrapy.core.scraper] ERROR: Error processing {'address': '官渡区-官南路片区',
+ 'community': None,
+ 'house_type': None,
+ 'publish_time': None,
+ 'surrounding_school': '\r\n'
+                       '                                    距离地铁1号线日新路站1072m',
+ 'total_price': '16186万',
+ 'url': 'https://www.fangstar.com/xiaoqu/detail/1344',
+ 'uuid': None}
+Traceback (most recent call last):
+  File "e:\py38\lib\site-packages\twisted\internet\defer.py", line 654, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "h:\python-练习\items\realty\realty_spider\realty_spider\pipelines.py", line 19, in process_item
+    item['publish_time'] = item['publish_time'].strip() #去空格
+AttributeError: 'NoneType' object has no attribute 'strip'
+2020-11-24 12:56:43 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.fangstar.com/xiaoqu/detail/1343> (referer: https://www.fangstar.com/xiaoqu/%7B%7Dxishangqu)
+2020-11-24 12:56:43 [scrapy.core.scraper] ERROR: Error processing {'address': '官渡区-关上片区',
+ 'community': None,
+ 'house_type': None,
+ 'publish_time': None,
+ 'surrounding_school': '\r\n'
+                       '                                    距离地铁1号线昆明火车站站888m',
+ 'total_price': '14561万',
+ 'url': 'https://www.fangstar.com/xiaoqu/detail/1343',
+ 'uuid': None}
+Traceback (most recent call last):
+  File "e:\py38\lib\site-packages\twisted\internet\defer.py", line 654, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "h:\python-练习\items\realty\realty_spider\realty_spider\pipelines.py", line 19, in process_item
+    item['publish_time'] = item['publish_time'].strip() #去空格
+AttributeError: 'NoneType' object has no attribute 'strip'
+2020-11-24 12:56:44 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.fangstar.com/xiaoqu/detail/1342> (referer: https://www.fangstar.com/xiaoqu/%7B%7Dxishangqu)
+2020-11-24 12:56:44 [scrapy.core.scraper] ERROR: Error processing {'address': '官渡区-关上片区',
+ 'community': None,
+ 'house_type': None,
+ 'publish_time': None,
+ 'surrounding_school': '\r\n'
+                       '                                    距离地铁1号线昆明火车站站376m',
+ 'total_price': '14509万',
+ 'url': 'https://www.fangstar.com/xiaoqu/detail/1342',
+ 'uuid': None}
+Traceback (most recent call last):
+  File "e:\py38\lib\site-packages\twisted\internet\defer.py", line 654, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "h:\python-练习\items\realty\realty_spider\realty_spider\pipelines.py", line 19, in process_item
+    item['publish_time'] = item['publish_time'].strip() #去空格
+AttributeError: 'NoneType' object has no attribute 'strip'
+2020-11-24 12:56:44 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.fangstar.com/xiaoqu/detail/1341> (referer: https://www.fangstar.com/xiaoqu/%7B%7Dxishangqu)
+2020-11-24 12:56:44 [scrapy.core.scraper] ERROR: Error processing {'address': '官渡区-关上片区',
+ 'community': None,
+ 'house_type': None,
+ 'publish_time': None,
+ 'surrounding_school': '\r\n                                    距离地铁1号线福德站810m',
+ 'total_price': '11386万',
+ 'url': 'https://www.fangstar.com/xiaoqu/detail/1341',
+ 'uuid': None}
+Traceback (most recent call last):
+  File "e:\py38\lib\site-packages\twisted\internet\defer.py", line 654, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "h:\python-练习\items\realty\realty_spider\realty_spider\pipelines.py", line 19, in process_item
+    item['publish_time'] = item['publish_time'].strip() #去空格
+AttributeError: 'NoneType' object has no attribute 'strip'
+2020-11-24 12:56:45 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.fangstar.com/xiaoqu/detail/1340> (referer: https://www.fangstar.com/xiaoqu/%7B%7Dxishangqu)
+2020-11-24 12:56:45 [scrapy.core.scraper] ERROR: Error processing {'address': '官渡区-关上片区',
+ 'community': None,
+ 'house_type': None,
+ 'publish_time': None,
+ 'surrounding_school': '\r\n                                    距离地铁1号线福德站918m',
+ 'total_price': '12954万',
+ 'url': 'https://www.fangstar.com/xiaoqu/detail/1340',
+ 'uuid': None}
+Traceback (most recent call last):
+  File "e:\py38\lib\site-packages\twisted\internet\defer.py", line 654, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "h:\python-练习\items\realty\realty_spider\realty_spider\pipelines.py", line 19, in process_item
+    item['publish_time'] = item['publish_time'].strip() #去空格
+AttributeError: 'NoneType' object has no attribute 'strip'
+2020-11-24 12:56:45 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.fangstar.com/xiaoqu/detail/1339> (referer: https://www.fangstar.com/xiaoqu/%7B%7Dxishangqu)
+2020-11-24 12:56:45 [scrapy.core.scraper] ERROR: Error processing {'address': '官渡区-关上片区',
+ 'community': None,
+ 'house_type': None,
+ 'publish_time': None,
+ 'surrounding_school': '\r\n                                    距离地铁1号线福德站850m',
+ 'total_price': '12885万',
+ 'url': 'https://www.fangstar.com/xiaoqu/detail/1339',
+ 'uuid': None}
+Traceback (most recent call last):
+  File "e:\py38\lib\site-packages\twisted\internet\defer.py", line 654, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "h:\python-练习\items\realty\realty_spider\realty_spider\pipelines.py", line 19, in process_item
+    item['publish_time'] = item['publish_time'].strip() #去空格
+AttributeError: 'NoneType' object has no attribute 'strip'
+2020-11-24 12:56:46 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.fangstar.com/xiaoqu/detail/1338> (referer: https://www.fangstar.com/xiaoqu/%7B%7Dxishangqu)
+2020-11-24 12:56:46 [scrapy.core.scraper] ERROR: Error processing {'address': '官渡区-关上片区',
+ 'community': None,
+ 'house_type': None,
+ 'publish_time': None,
+ 'surrounding_school': '\r\n'
+                       '                                    距离地铁1号线福德站1054m',
+ 'total_price': '11131万',
+ 'url': 'https://www.fangstar.com/xiaoqu/detail/1338',
+ 'uuid': None}
+Traceback (most recent call last):
+  File "e:\py38\lib\site-packages\twisted\internet\defer.py", line 654, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "h:\python-练习\items\realty\realty_spider\realty_spider\pipelines.py", line 19, in process_item
+    item['publish_time'] = item['publish_time'].strip() #去空格
+AttributeError: 'NoneType' object has no attribute 'strip'
+2020-11-24 12:56:46 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.fangstar.com/xiaoqu/detail/1337> (referer: https://www.fangstar.com/xiaoqu/%7B%7Dxishangqu)
+2020-11-24 12:56:46 [scrapy.core.scraper] ERROR: Error processing {'address': '官渡区-关上片区',
+ 'community': None,
+ 'house_type': None,
+ 'publish_time': None,
+ 'surrounding_school': '\r\n                                    距离地铁1号线福德站711m',
+ 'total_price': '11730万',
+ 'url': 'https://www.fangstar.com/xiaoqu/detail/1337',
+ 'uuid': None}
+Traceback (most recent call last):
+  File "e:\py38\lib\site-packages\twisted\internet\defer.py", line 654, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "h:\python-练习\items\realty\realty_spider\realty_spider\pipelines.py", line 19, in process_item
+    item['publish_time'] = item['publish_time'].strip() #去空格
+AttributeError: 'NoneType' object has no attribute 'strip'
+2020-11-24 12:56:47 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.fangstar.com/xiaoqu/detail/1336> (referer: https://www.fangstar.com/xiaoqu/%7B%7Dxishangqu)
+2020-11-24 12:56:47 [scrapy.core.scraper] ERROR: Error processing {'address': '官渡区-关上片区',
+ 'community': None,
+ 'house_type': None,
+ 'publish_time': None,
+ 'surrounding_school': '\r\n                                    距离地铁1号线福德站826m',
+ 'total_price': '20000万',
+ 'url': 'https://www.fangstar.com/xiaoqu/detail/1336',
+ 'uuid': None}
+Traceback (most recent call last):
+  File "e:\py38\lib\site-packages\twisted\internet\defer.py", line 654, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "h:\python-练习\items\realty\realty_spider\realty_spider\pipelines.py", line 19, in process_item
+    item['publish_time'] = item['publish_time'].strip() #去空格
+AttributeError: 'NoneType' object has no attribute 'strip'
+2020-11-24 12:56:48 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.fangstar.com/xiaoqu/pg3> (referer: https://www.fangstar.com/xiaoqu/pg2)
+2020-11-24 12:56:48 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.fangstar.com/xiaoqu/detail/1435> (referer: https://www.fangstar.com/xiaoqu/pg2)
+2020-11-24 12:56:49 [scrapy.core.scraper] ERROR: Error processing {'address': '西山区-福海片区',
+ 'community': None,
+ 'house_type': None,
+ 'publish_time': None,
+ 'surrounding_school': None,
+ 'total_price': '19415万',
+ 'url': 'https://www.fangstar.com/xiaoqu/detail/1435',
+ 'uuid': None}
+Traceback (most recent call last):
+  File "e:\py38\lib\site-packages\twisted\internet\defer.py", line 654, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "h:\python-练习\items\realty\realty_spider\realty_spider\pipelines.py", line 19, in process_item
+    item['publish_time'] = item['publish_time'].strip() #去空格
+AttributeError: 'NoneType' object has no attribute 'strip'
+2020-11-24 12:56:49 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.fangstar.com/xiaoqu/detail/1434> (referer: https://www.fangstar.com/xiaoqu/pg2)
+2020-11-24 12:56:49 [scrapy.core.scraper] ERROR: Error processing {'address': '西山区-滇池卫城片区',
+ 'community': None,
+ 'house_type': None,
+ 'publish_time': None,
+ 'surrounding_school': '滇池度假区实验学校',
+ 'total_price': '17906万',
+ 'url': 'https://www.fangstar.com/xiaoqu/detail/1434',
+ 'uuid': None}
+Traceback (most recent call last):
+  File "e:\py38\lib\site-packages\twisted\internet\defer.py", line 654, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "h:\python-练习\items\realty\realty_spider\realty_spider\pipelines.py", line 19, in process_item
+    item['publish_time'] = item['publish_time'].strip() #去空格
+AttributeError: 'NoneType' object has no attribute 'strip'
+2020-11-24 12:56:50 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.fangstar.com/xiaoqu/detail/1433> (referer: https://www.fangstar.com/xiaoqu/pg2)
+2020-11-24 12:56:50 [scrapy.core.scraper] ERROR: Error processing {'address': '西山区-滇池卫城片区',
+ 'community': None,
+ 'house_type': None,
+ 'publish_time': None,
+ 'surrounding_school': '滇池度假区实验学校',
+ 'total_price': '23904万',
+ 'url': 'https://www.fangstar.com/xiaoqu/detail/1433',
+ 'uuid': None}
+Traceback (most recent call last):
+  File "e:\py38\lib\site-packages\twisted\internet\defer.py", line 654, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "h:\python-练习\items\realty\realty_spider\realty_spider\pipelines.py", line 19, in process_item
+    item['publish_time'] = item['publish_time'].strip() #去空格
+AttributeError: 'NoneType' object has no attribute 'strip'
+2020-11-24 12:56:50 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.fangstar.com/xiaoqu/detail/1432> (referer: https://www.fangstar.com/xiaoqu/pg2)
+2020-11-24 12:56:50 [scrapy.core.scraper] ERROR: Error processing {'address': '西山区-滇池卫城片区',
+ 'community': None,
+ 'house_type': None,
+ 'publish_time': None,
+ 'surrounding_school': '滇池度假区实验学校',
+ 'total_price': '20103万',
+ 'url': 'https://www.fangstar.com/xiaoqu/detail/1432',
+ 'uuid': None}
+Traceback (most recent call last):
+  File "e:\py38\lib\site-packages\twisted\internet\defer.py", line 654, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "h:\python-练习\items\realty\realty_spider\realty_spider\pipelines.py", line 19, in process_item
+    item['publish_time'] = item['publish_time'].strip() #去空格
+AttributeError: 'NoneType' object has no attribute 'strip'
+2020-11-24 12:56:51 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.fangstar.com/xiaoqu/detail/1431> (referer: https://www.fangstar.com/xiaoqu/pg2)
+2020-11-24 12:56:51 [scrapy.core.scraper] ERROR: Error processing {'address': '西山区-滇池度假区',
+ 'community': None,
+ 'house_type': None,
+ 'publish_time': None,
+ 'surrounding_school': '滇池度假区实验学校',
+ 'total_price': '22768万',
+ 'url': 'https://www.fangstar.com/xiaoqu/detail/1431',
+ 'uuid': None}
+Traceback (most recent call last):
+  File "e:\py38\lib\site-packages\twisted\internet\defer.py", line 654, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "h:\python-练习\items\realty\realty_spider\realty_spider\pipelines.py", line 19, in process_item
+    item['publish_time'] = item['publish_time'].strip() #去空格
+AttributeError: 'NoneType' object has no attribute 'strip'
+2020-11-24 12:56:52 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.fangstar.com/xiaoqu/detail/1430> (referer: https://www.fangstar.com/xiaoqu/pg2)
+2020-11-24 12:56:52 [scrapy.core.scraper] ERROR: Error processing {'address': '西山区-福海片区',
+ 'community': None,
+ 'house_type': None,
+ 'publish_time': None,
+ 'surrounding_school': None,
+ 'total_price': '15982万',
+ 'url': 'https://www.fangstar.com/xiaoqu/detail/1430',
+ 'uuid': None}
+Traceback (most recent call last):
+  File "e:\py38\lib\site-packages\twisted\internet\defer.py", line 654, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "h:\python-练习\items\realty\realty_spider\realty_spider\pipelines.py", line 19, in process_item
+    item['publish_time'] = item['publish_time'].strip() #去空格
+AttributeError: 'NoneType' object has no attribute 'strip'
+2020-11-24 12:56:52 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.fangstar.com/xiaoqu/detail/1429> (referer: https://www.fangstar.com/xiaoqu/pg2)
+2020-11-24 12:56:52 [scrapy.core.scraper] ERROR: Error processing {'address': '西山区-滇池卫城片区',
+ 'community': None,
+ 'house_type': None,
+ 'publish_time': None,
+ 'surrounding_school': '滇池度假区实验学校',
+ 'total_price': '22014万',
+ 'url': 'https://www.fangstar.com/xiaoqu/detail/1429',
+ 'uuid': None}
+Traceback (most recent call last):
+  File "e:\py38\lib\site-packages\twisted\internet\defer.py", line 654, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "h:\python-练习\items\realty\realty_spider\realty_spider\pipelines.py", line 19, in process_item
+    item['publish_time'] = item['publish_time'].strip() #去空格
+AttributeError: 'NoneType' object has no attribute 'strip'
+2020-11-24 12:56:52 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.fangstar.com/xiaoqu/detail/1427> (referer: https://www.fangstar.com/xiaoqu/pg2)
+2020-11-24 12:56:52 [scrapy.core.scraper] ERROR: Error processing {'address': '西山区-滇池卫城片区',
+ 'community': None,
+ 'house_type': None,
+ 'publish_time': None,
+ 'surrounding_school': '滇池度假区实验学校',
+ 'total_price': '19927万',
+ 'url': 'https://www.fangstar.com/xiaoqu/detail/1427',
+ 'uuid': None}
+Traceback (most recent call last):
+  File "e:\py38\lib\site-packages\twisted\internet\defer.py", line 654, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "h:\python-练习\items\realty\realty_spider\realty_spider\pipelines.py", line 19, in process_item
+    item['publish_time'] = item['publish_time'].strip() #去空格
+AttributeError: 'NoneType' object has no attribute 'strip'
+2020-11-24 12:56:53 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.fangstar.com/xiaoqu/detail/1426> (referer: https://www.fangstar.com/xiaoqu/pg2)
+2020-11-24 12:56:53 [scrapy.core.scraper] ERROR: Error processing {'address': '西山区-滇池度假区',
+ 'community': None,
+ 'house_type': None,
+ 'publish_time': None,
+ 'surrounding_school': '滇池度假区第二小学',
+ 'total_price': '25917万',
+ 'url': 'https://www.fangstar.com/xiaoqu/detail/1426',
+ 'uuid': None}
+Traceback (most recent call last):
+  File "e:\py38\lib\site-packages\twisted\internet\defer.py", line 654, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "h:\python-练习\items\realty\realty_spider\realty_spider\pipelines.py", line 19, in process_item
+    item['publish_time'] = item['publish_time'].strip() #去空格
+AttributeError: 'NoneType' object has no attribute 'strip'
+2020-11-24 12:56:54 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.fangstar.com/xiaoqu/detail/1425> (referer: https://www.fangstar.com/xiaoqu/pg2)
+2020-11-24 12:56:54 [scrapy.core.scraper] ERROR: Error processing {'address': '西山区-滇池度假区',
+ 'community': None,
+ 'house_type': None,
+ 'publish_time': None,
+ 'surrounding_school': '滇池度假区第二小学',
+ 'total_price': '20313万',
+ 'url': 'https://www.fangstar.com/xiaoqu/detail/1425',
+ 'uuid': None}
+Traceback (most recent call last):
+  File "e:\py38\lib\site-packages\twisted\internet\defer.py", line 654, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "h:\python-练习\items\realty\realty_spider\realty_spider\pipelines.py", line 19, in process_item
+    item['publish_time'] = item['publish_time'].strip() #去空格
+AttributeError: 'NoneType' object has no attribute 'strip'
+2020-11-24 12:56:54 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.fangstar.com/xiaoqu/detail/1424> (referer: https://www.fangstar.com/xiaoqu/pg2)
+2020-11-24 12:56:55 [scrapy.core.scraper] ERROR: Error processing {'address': '西山区-滇池度假区',
+ 'community': None,
+ 'house_type': None,
+ 'publish_time': None,
+ 'surrounding_school': '滇池度假区第二小学',
+ 'total_price': '19867万',
+ 'url': 'https://www.fangstar.com/xiaoqu/detail/1424',
+ 'uuid': None}
+Traceback (most recent call last):
+  File "e:\py38\lib\site-packages\twisted\internet\defer.py", line 654, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "h:\python-练习\items\realty\realty_spider\realty_spider\pipelines.py", line 19, in process_item
+    item['publish_time'] = item['publish_time'].strip() #去空格
+AttributeError: 'NoneType' object has no attribute 'strip'
+2020-11-24 12:56:55 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.fangstar.com/xiaoqu/detail/1423> (referer: https://www.fangstar.com/xiaoqu/pg2)
+2020-11-24 12:56:55 [scrapy.core.scraper] ERROR: Error processing {'address': '西山区-滇池度假区',
+ 'community': None,
+ 'house_type': None,
+ 'publish_time': None,
+ 'surrounding_school': '滇池度假区第二小学',
+ 'total_price': '18659万',
+ 'url': 'https://www.fangstar.com/xiaoqu/detail/1423',
+ 'uuid': None}
+Traceback (most recent call last):
+  File "e:\py38\lib\site-packages\twisted\internet\defer.py", line 654, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "h:\python-练习\items\realty\realty_spider\realty_spider\pipelines.py", line 19, in process_item
+    item['publish_time'] = item['publish_time'].strip() #去空格
+AttributeError: 'NoneType' object has no attribute 'strip'
+2020-11-24 12:56:56 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.fangstar.com/xiaoqu/detail/1422> (referer: https://www.fangstar.com/xiaoqu/pg2)
+2020-11-24 12:56:56 [scrapy.core.scraper] ERROR: Error processing {'address': '西山区-滇池卫城片区',
+ 'community': None,
+ 'house_type': None,
+ 'publish_time': None,
+ 'surrounding_school': '滇池度假区实验学校',
+ 'total_price': '20276万',
+ 'url': 'https://www.fangstar.com/xiaoqu/detail/1422',
+ 'uuid': None}
+Traceback (most recent call last):
+  File "e:\py38\lib\site-packages\twisted\internet\defer.py", line 654, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "h:\python-练习\items\realty\realty_spider\realty_spider\pipelines.py", line 19, in process_item
+    item['publish_time'] = item['publish_time'].strip() #去空格
+AttributeError: 'NoneType' object has no attribute 'strip'
+2020-11-24 12:56:56 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.fangstar.com/xiaoqu/detail/1421> (referer: https://www.fangstar.com/xiaoqu/pg2)
+2020-11-24 12:56:57 [scrapy.core.scraper] ERROR: Error processing {'address': '官渡区-关上片区',
+ 'community': None,
+ 'house_type': None,
+ 'publish_time': None,
+ 'surrounding_school': '\r\n'
+                       '                                    距离地铁1号线昆明火车站站1277m',
+ 'total_price': '16741万',
+ 'url': 'https://www.fangstar.com/xiaoqu/detail/1421',
+ 'uuid': None}
+Traceback (most recent call last):
+  File "e:\py38\lib\site-packages\twisted\internet\defer.py", line 654, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "h:\python-练习\items\realty\realty_spider\realty_spider\pipelines.py", line 19, in process_item
+    item['publish_time'] = item['publish_time'].strip() #去空格
+AttributeError: 'NoneType' object has no attribute 'strip'
+2020-11-24 12:56:57 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.fangstar.com/xiaoqu/detail/1420> (referer: https://www.fangstar.com/xiaoqu/pg2)
+2020-11-24 12:56:57 [scrapy.core.scraper] ERROR: Error processing {'address': '官渡区-官南路片区',
+ 'community': None,
+ 'house_type': None,
+ 'publish_time': None,
+ 'surrounding_school': '\r\n'
+                       '                                    距离地铁1号线昆明火车站站1398m',
+ 'total_price': '15145万',
+ 'url': 'https://www.fangstar.com/xiaoqu/detail/1420',
+ 'uuid': None}
+Traceback (most recent call last):
+  File "e:\py38\lib\site-packages\twisted\internet\defer.py", line 654, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "h:\python-练习\items\realty\realty_spider\realty_spider\pipelines.py", line 19, in process_item
+    item['publish_time'] = item['publish_time'].strip() #去空格
+AttributeError: 'NoneType' object has no attribute 'strip'
+2020-11-24 12:56:58 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.fangstar.com/xiaoqu/detail/1419> (referer: https://www.fangstar.com/xiaoqu/pg2)
+2020-11-24 12:56:58 [scrapy.core.scraper] ERROR: Error processing {'address': '官渡区-官南路片区',
+ 'community': None,
+ 'house_type': None,
+ 'publish_time': None,
+ 'surrounding_school': '\r\n'
+                       '                                    距离地铁1号线福德站1092m',
+ 'total_price': '13057万',
+ 'url': 'https://www.fangstar.com/xiaoqu/detail/1419',
+ 'uuid': None}
+Traceback (most recent call last):
+  File "e:\py38\lib\site-packages\twisted\internet\defer.py", line 654, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "h:\python-练习\items\realty\realty_spider\realty_spider\pipelines.py", line 19, in process_item
+    item['publish_time'] = item['publish_time'].strip() #去空格
+AttributeError: 'NoneType' object has no attribute 'strip'
+2020-11-24 12:56:58 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.fangstar.com/xiaoqu/pg4> (referer: https://www.fangstar.com/xiaoqu/pg3)
+2020-11-24 12:56:59 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.fangstar.com/xiaoqu/detail/1507> (referer: https://www.fangstar.com/xiaoqu/pg3)
+2020-11-24 12:56:59 [scrapy.core.scraper] ERROR: Error processing {'address': '西山区-大商汇片区',
+ 'community': None,
+ 'house_type': None,
+ 'publish_time': None,
+ 'surrounding_school': '中华小学（西山学校）',
+ 'total_price': '11927万',
+ 'url': 'https://www.fangstar.com/xiaoqu/detail/1507',
+ 'uuid': None}
+Traceback (most recent call last):
+  File "e:\py38\lib\site-packages\twisted\internet\defer.py", line 654, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "h:\python-练习\items\realty\realty_spider\realty_spider\pipelines.py", line 19, in process_item
+    item['publish_time'] = item['publish_time'].strip() #去空格
+AttributeError: 'NoneType' object has no attribute 'strip'
+2020-11-24 12:57:00 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.fangstar.com/xiaoqu/detail/1506> (referer: https://www.fangstar.com/xiaoqu/pg3)
+2020-11-24 12:57:00 [scrapy.core.scraper] ERROR: Error processing {'address': '官渡区-关上片区',
+ 'community': None,
+ 'house_type': None,
+ 'publish_time': None,
+ 'surrounding_school': '关上实验学校小学部',
+ 'total_price': '10402万',
+ 'url': 'https://www.fangstar.com/xiaoqu/detail/1506',
+ 'uuid': None}
+Traceback (most recent call last):
+  File "e:\py38\lib\site-packages\twisted\internet\defer.py", line 654, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "h:\python-练习\items\realty\realty_spider\realty_spider\pipelines.py", line 19, in process_item
+    item['publish_time'] = item['publish_time'].strip() #去空格
+AttributeError: 'NoneType' object has no attribute 'strip'
+2020-11-24 12:57:00 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.fangstar.com/xiaoqu/detail/1505> (referer: https://www.fangstar.com/xiaoqu/pg3)
+2020-11-24 12:57:01 [scrapy.core.scraper] ERROR: Error processing {'address': '西山区-大商汇片区',
+ 'community': None,
+ 'house_type': None,
+ 'publish_time': None,
+ 'surrounding_school': '六甲第一小学',
+ 'total_price': '18711万',
+ 'url': 'https://www.fangstar.com/xiaoqu/detail/1505',
+ 'uuid': None}
+Traceback (most recent call last):
+  File "e:\py38\lib\site-packages\twisted\internet\defer.py", line 654, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "h:\python-练习\items\realty\realty_spider\realty_spider\pipelines.py", line 19, in process_item
+    item['publish_time'] = item['publish_time'].strip() #去空格
+AttributeError: 'NoneType' object has no attribute 'strip'
+2020-11-24 12:57:01 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.fangstar.com/xiaoqu/detail/1504> (referer: https://www.fangstar.com/xiaoqu/pg3)
+2020-11-24 12:57:01 [scrapy.core.scraper] ERROR: Error processing {'address': '官渡区-关上片区',
+ 'community': None,
+ 'house_type': None,
+ 'publish_time': None,
+ 'surrounding_school': '\r\n                                    距离地铁1号线福德站937m',
+ 'total_price': '11236万',
+ 'url': 'https://www.fangstar.com/xiaoqu/detail/1504',
+ 'uuid': None}
+Traceback (most recent call last):
+  File "e:\py38\lib\site-packages\twisted\internet\defer.py", line 654, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "h:\python-练习\items\realty\realty_spider\realty_spider\pipelines.py", line 19, in process_item
+    item['publish_time'] = item['publish_time'].strip() #去空格
+AttributeError: 'NoneType' object has no attribute 'strip'
+2020-11-24 12:57:02 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.fangstar.com/xiaoqu/detail/1503> (referer: https://www.fangstar.com/xiaoqu/pg3)
+2020-11-24 12:57:02 [scrapy.core.scraper] ERROR: Error processing {'address': '官渡区-关上片区',
+ 'community': None,
+ 'house_type': None,
+ 'publish_time': None,
+ 'surrounding_school': '\r\n                                    距离地铁1号线福德站708m',
+ 'total_price': '10363万',
+ 'url': 'https://www.fangstar.com/xiaoqu/detail/1503',
+ 'uuid': None}
+Traceback (most recent call last):
+  File "e:\py38\lib\site-packages\twisted\internet\defer.py", line 654, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "h:\python-练习\items\realty\realty_spider\realty_spider\pipelines.py", line 19, in process_item
+    item['publish_time'] = item['publish_time'].strip() #去空格
+AttributeError: 'NoneType' object has no attribute 'strip'
+2020-11-24 12:57:03 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.fangstar.com/xiaoqu/detail/1502> (referer: https://www.fangstar.com/xiaoqu/pg3)
+2020-11-24 12:57:03 [scrapy.core.scraper] ERROR: Error processing {'address': '官渡区-关上片区',
+ 'community': None,
+ 'house_type': None,
+ 'publish_time': None,
+ 'surrounding_school': '\r\n'
+                       '                                    距离地铁1号线福德站1371m',
+ 'total_price': '16043万',
+ 'url': 'https://www.fangstar.com/xiaoqu/detail/1502',
+ 'uuid': None}
+Traceback (most recent call last):
+  File "e:\py38\lib\site-packages\twisted\internet\defer.py", line 654, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "h:\python-练习\items\realty\realty_spider\realty_spider\pipelines.py", line 19, in process_item
+    item['publish_time'] = item['publish_time'].strip() #去空格
+AttributeError: 'NoneType' object has no attribute 'strip'
+2020-11-24 12:57:03 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.fangstar.com/xiaoqu/detail/1501> (referer: https://www.fangstar.com/xiaoqu/pg3)
+2020-11-24 12:57:03 [scrapy.core.scraper] ERROR: Error processing {'address': '官渡区-官南路片区',
+ 'community': None,
+ 'house_type': None,
+ 'publish_time': None,
+ 'surrounding_school': '小街小学',
+ 'total_price': '16282万',
+ 'url': 'https://www.fangstar.com/xiaoqu/detail/1501',
+ 'uuid': None}
+Traceback (most recent call last):
+  File "e:\py38\lib\site-packages\twisted\internet\defer.py", line 654, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "h:\python-练习\items\realty\realty_spider\realty_spider\pipelines.py", line 19, in process_item
+    item['publish_time'] = item['publish_time'].strip() #去空格
+AttributeError: 'NoneType' object has no attribute 'strip'
+2020-11-24 12:57:04 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.fangstar.com/xiaoqu/detail/1499> (referer: https://www.fangstar.com/xiaoqu/pg3)
+2020-11-24 12:57:04 [scrapy.core.scraper] ERROR: Error processing {'address': '官渡区-官南路片区',
+ 'community': None,
+ 'house_type': None,
+ 'publish_time': None,
+ 'surrounding_school': '\r\n'
+                       '                                    距离地铁1号线福德站1154m',
+ 'total_price': '12396万',
+ 'url': 'https://www.fangstar.com/xiaoqu/detail/1499',
+ 'uuid': None}
+Traceback (most recent call last):
+  File "e:\py38\lib\site-packages\twisted\internet\defer.py", line 654, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "h:\python-练习\items\realty\realty_spider\realty_spider\pipelines.py", line 19, in process_item
+    item['publish_time'] = item['publish_time'].strip() #去空格
+AttributeError: 'NoneType' object has no attribute 'strip'
+2020-11-24 12:57:05 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.fangstar.com/xiaoqu/detail/1497> (referer: https://www.fangstar.com/xiaoqu/pg3)
+2020-11-24 12:57:05 [scrapy.core.scraper] ERROR: Error processing {'address': '官渡区-官南路片区',
+ 'community': None,
+ 'house_type': None,
+ 'publish_time': None,
+ 'surrounding_school': '\r\n'
+                       '                                    距离地铁1号线福德站1252m',
+ 'total_price': '12843万',
+ 'url': 'https://www.fangstar.com/xiaoqu/detail/1497',
+ 'uuid': None}
+Traceback (most recent call last):
+  File "e:\py38\lib\site-packages\twisted\internet\defer.py", line 654, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "h:\python-练习\items\realty\realty_spider\realty_spider\pipelines.py", line 19, in process_item
+    item['publish_time'] = item['publish_time'].strip() #去空格
+AttributeError: 'NoneType' object has no attribute 'strip'
+2020-11-24 12:57:05 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.fangstar.com/xiaoqu/detail/1496> (referer: https://www.fangstar.com/xiaoqu/pg3)
+2020-11-24 12:57:05 [scrapy.core.scraper] ERROR: Error processing {'address': '官渡区-官南路片区',
+ 'community': None,
+ 'house_type': None,
+ 'publish_time': None,
+ 'surrounding_school': '\r\n'
+                       '                                    距离地铁1号线福德站1233m',
+ 'total_price': '12480万',
+ 'url': 'https://www.fangstar.com/xiaoqu/detail/1496',
+ 'uuid': None}
+Traceback (most recent call last):
+  File "e:\py38\lib\site-packages\twisted\internet\defer.py", line 654, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "h:\python-练习\items\realty\realty_spider\realty_spider\pipelines.py", line 19, in process_item
+    item['publish_time'] = item['publish_time'].strip() #去空格
+AttributeError: 'NoneType' object has no attribute 'strip'
+2020-11-24 12:57:06 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.fangstar.com/xiaoqu/detail/1495> (referer: https://www.fangstar.com/xiaoqu/pg3)
+2020-11-24 12:57:06 [scrapy.core.scraper] ERROR: Error processing {'address': '官渡区-官南路片区',
+ 'community': None,
+ 'house_type': None,
+ 'publish_time': None,
+ 'surrounding_school': '小街小学',
+ 'total_price': '11323万',
+ 'url': 'https://www.fangstar.com/xiaoqu/detail/1495',
+ 'uuid': None}
+Traceback (most recent call last):
+  File "e:\py38\lib\site-packages\twisted\internet\defer.py", line 654, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "h:\python-练习\items\realty\realty_spider\realty_spider\pipelines.py", line 19, in process_item
+    item['publish_time'] = item['publish_time'].strip() #去空格
+AttributeError: 'NoneType' object has no attribute 'strip'
+2020-11-24 12:57:06 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.fangstar.com/xiaoqu/detail/1494> (referer: https://www.fangstar.com/xiaoqu/pg3)
+2020-11-24 12:57:07 [scrapy.core.scraper] ERROR: Error processing {'address': '官渡区-官南路片区',
+ 'community': None,
+ 'house_type': None,
+ 'publish_time': None,
+ 'surrounding_school': '小街小学',
+ 'total_price': None,
+ 'url': 'https://www.fangstar.com/xiaoqu/detail/1494',
+ 'uuid': None}
+Traceback (most recent call last):
+  File "e:\py38\lib\site-packages\twisted\internet\defer.py", line 654, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "h:\python-练习\items\realty\realty_spider\realty_spider\pipelines.py", line 19, in process_item
+    item['publish_time'] = item['publish_time'].strip() #去空格
+AttributeError: 'NoneType' object has no attribute 'strip'
+2020-11-24 12:57:07 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.fangstar.com/xiaoqu/detail/1493> (referer: https://www.fangstar.com/xiaoqu/pg3)
+2020-11-24 12:57:07 [scrapy.core.scraper] ERROR: Error processing {'address': '官渡区-官南路片区',
+ 'community': None,
+ 'house_type': None,
+ 'publish_time': None,
+ 'surrounding_school': '小街小学',
+ 'total_price': '13837万',
+ 'url': 'https://www.fangstar.com/xiaoqu/detail/1493',
+ 'uuid': None}
+Traceback (most recent call last):
+  File "e:\py38\lib\site-packages\twisted\internet\defer.py", line 654, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "h:\python-练习\items\realty\realty_spider\realty_spider\pipelines.py", line 19, in process_item
+    item['publish_time'] = item['publish_time'].strip() #去空格
+AttributeError: 'NoneType' object has no attribute 'strip'
+2020-11-24 12:57:08 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.fangstar.com/xiaoqu/detail/1492> (referer: https://www.fangstar.com/xiaoqu/pg3)
+2020-11-24 12:57:08 [scrapy.core.scraper] ERROR: Error processing {'address': '西山区-大商汇片区',
+ 'community': None,
+ 'house_type': None,
+ 'publish_time': None,
+ 'surrounding_school': '中华小学（西山学校）',
+ 'total_price': '14315万',
+ 'url': 'https://www.fangstar.com/xiaoqu/detail/1492',
+ 'uuid': None}
+Traceback (most recent call last):
+  File "e:\py38\lib\site-packages\twisted\internet\defer.py", line 654, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "h:\python-练习\items\realty\realty_spider\realty_spider\pipelines.py", line 19, in process_item
+    item['publish_time'] = item['publish_time'].strip() #去空格
+AttributeError: 'NoneType' object has no attribute 'strip'
+2020-11-24 12:57:08 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.fangstar.com/xiaoqu/detail/1491> (referer: https://www.fangstar.com/xiaoqu/pg3)
+2020-11-24 12:57:08 [scrapy.core.scraper] ERROR: Error processing {'address': '西山区-西华园片区',
+ 'community': None,
+ 'house_type': None,
+ 'publish_time': None,
+ 'surrounding_school': '福海杨家中心学校船房分校',
+ 'total_price': '14239万',
+ 'url': 'https://www.fangstar.com/xiaoqu/detail/1491',
+ 'uuid': None}
+Traceback (most recent call last):
+  File "e:\py38\lib\site-packages\twisted\internet\defer.py", line 654, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "h:\python-练习\items\realty\realty_spider\realty_spider\pipelines.py", line 19, in process_item
+    item['publish_time'] = item['publish_time'].strip() #去空格
+AttributeError: 'NoneType' object has no attribute 'strip'
+2020-11-24 12:57:09 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.fangstar.com/xiaoqu/detail/1490> (referer: https://www.fangstar.com/xiaoqu/pg3)
+2020-11-24 12:57:09 [scrapy.core.scraper] ERROR: Error processing {'address': '西山区-省高院片区',
+ 'community': None,
+ 'house_type': None,
+ 'publish_time': None,
+ 'surrounding_school': '书林一小',
+ 'total_price': '13711万',
+ 'url': 'https://www.fangstar.com/xiaoqu/detail/1490',
+ 'uuid': None}
+Traceback (most recent call last):
+  File "e:\py38\lib\site-packages\twisted\internet\defer.py", line 654, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "h:\python-练习\items\realty\realty_spider\realty_spider\pipelines.py", line 19, in process_item
+    item['publish_time'] = item['publish_time'].strip() #去空格
+AttributeError: 'NoneType' object has no attribute 'strip'
+2020-11-24 12:57:09 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.fangstar.com/xiaoqu/pg5> (referer: https://www.fangstar.com/xiaoqu/pg4)
+2020-11-24 12:57:10 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.fangstar.com/xiaoqu/detail/1616> (referer: https://www.fangstar.com/xiaoqu/pg4)
+2020-11-24 12:57:10 [scrapy.core.scraper] ERROR: Error processing {'address': '官渡区-关上片区',
+ 'community': None,
+ 'house_type': None,
+ 'publish_time': None,
+ 'surrounding_school': '\r\n'
+                       '                                    距离地铁1号线昆明火车站站1204m',
+ 'total_price': '12092万',
+ 'url': 'https://www.fangstar.com/xiaoqu/detail/1616',
+ 'uuid': None}
+Traceback (most recent call last):
+  File "e:\py38\lib\site-packages\twisted\internet\defer.py", line 654, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "h:\python-练习\items\realty\realty_spider\realty_spider\pipelines.py", line 19, in process_item
+    item['publish_time'] = item['publish_time'].strip() #去空格
+AttributeError: 'NoneType' object has no attribute 'strip'
+2020-11-24 12:57:10 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.fangstar.com/xiaoqu/detail/1615> (referer: https://www.fangstar.com/xiaoqu/pg4)
+2020-11-24 12:57:11 [scrapy.core.scraper] ERROR: Error processing {'address': '西山区-西华园片区',
+ 'community': None,
+ 'house_type': None,
+ 'publish_time': None,
+ 'surrounding_school': '福海杨家中心学校船房分校',
+ 'total_price': '16123万',
+ 'url': 'https://www.fangstar.com/xiaoqu/detail/1615',
+ 'uuid': None}
+Traceback (most recent call last):
+  File "e:\py38\lib\site-packages\twisted\internet\defer.py", line 654, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "h:\python-练习\items\realty\realty_spider\realty_spider\pipelines.py", line 19, in process_item
+    item['publish_time'] = item['publish_time'].strip() #去空格
+AttributeError: 'NoneType' object has no attribute 'strip'
+2020-11-24 12:57:11 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.fangstar.com/xiaoqu/detail/1614> (referer: https://www.fangstar.com/xiaoqu/pg4)
+2020-11-24 12:57:11 [scrapy.core.scraper] ERROR: Error processing {'address': '西山区-大商汇片区',
+ 'community': None,
+ 'house_type': None,
+ 'publish_time': None,
+ 'surrounding_school': '中华小学（西山学校）',
+ 'total_price': '15514万',
+ 'url': 'https://www.fangstar.com/xiaoqu/detail/1614',
+ 'uuid': None}
+Traceback (most recent call last):
+  File "e:\py38\lib\site-packages\twisted\internet\defer.py", line 654, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "h:\python-练习\items\realty\realty_spider\realty_spider\pipelines.py", line 19, in process_item
+    item['publish_time'] = item['publish_time'].strip() #去空格
+AttributeError: 'NoneType' object has no attribute 'strip'
+2020-11-24 12:57:12 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.fangstar.com/xiaoqu/detail/1608> (referer: https://www.fangstar.com/xiaoqu/pg4)
+2020-11-24 12:57:12 [scrapy.core.scraper] ERROR: Error processing {'address': '西山区-大商汇片区',
+ 'community': None,
+ 'house_type': None,
+ 'publish_time': None,
+ 'surrounding_school': '前卫南坝中心学校',
+ 'total_price': '15294万',
+ 'url': 'https://www.fangstar.com/xiaoqu/detail/1608',
+ 'uuid': None}
+Traceback (most recent call last):
+  File "e:\py38\lib\site-packages\twisted\internet\defer.py", line 654, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "h:\python-练习\items\realty\realty_spider\realty_spider\pipelines.py", line 19, in process_item
+    item['publish_time'] = item['publish_time'].strip() #去空格
+AttributeError: 'NoneType' object has no attribute 'strip'
+2020-11-24 12:57:13 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.fangstar.com/xiaoqu/detail/1607> (referer: https://www.fangstar.com/xiaoqu/pg4)
+2020-11-24 12:57:13 [scrapy.core.scraper] ERROR: Error processing {'address': '西山区-西华园片区',
+ 'community': None,
+ 'house_type': None,
+ 'publish_time': None,
+ 'surrounding_school': '阳光小学',
+ 'total_price': '20796万',
+ 'url': 'https://www.fangstar.com/xiaoqu/detail/1607',
+ 'uuid': None}
+Traceback (most recent call last):
+  File "e:\py38\lib\site-packages\twisted\internet\defer.py", line 654, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "h:\python-练习\items\realty\realty_spider\realty_spider\pipelines.py", line 19, in process_item
+    item['publish_time'] = item['publish_time'].strip() #去空格
+AttributeError: 'NoneType' object has no attribute 'strip'
+2020-11-24 12:57:13 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.fangstar.com/xiaoqu/detail/1605> (referer: https://www.fangstar.com/xiaoqu/pg4)
+2020-11-24 12:57:13 [scrapy.core.scraper] ERROR: Error processing {'address': '西山区-西华园片区',
+ 'community': None,
+ 'house_type': None,
+ 'publish_time': None,
+ 'surrounding_school': '福海杨家中心学校船房分校',
+ 'total_price': '13072万',
+ 'url': 'https://www.fangstar.com/xiaoqu/detail/1605',
+ 'uuid': None}
+Traceback (most recent call last):
+  File "e:\py38\lib\site-packages\twisted\internet\defer.py", line 654, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "h:\python-练习\items\realty\realty_spider\realty_spider\pipelines.py", line 19, in process_item
+    item['publish_time'] = item['publish_time'].strip() #去空格
+AttributeError: 'NoneType' object has no attribute 'strip'
+2020-11-24 12:57:14 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.fangstar.com/xiaoqu/detail/1604> (referer: https://www.fangstar.com/xiaoqu/pg4)
+2020-11-24 12:57:14 [scrapy.core.scraper] ERROR: Error processing {'address': '西山区-西华园片区',
+ 'community': None,
+ 'house_type': None,
+ 'publish_time': None,
+ 'surrounding_school': '福海杨家中心学校船房分校',
+ 'total_price': '10838万',
+ 'url': 'https://www.fangstar.com/xiaoqu/detail/1604',
+ 'uuid': None}
+Traceback (most recent call last):
+  File "e:\py38\lib\site-packages\twisted\internet\defer.py", line 654, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "h:\python-练习\items\realty\realty_spider\realty_spider\pipelines.py", line 19, in process_item
+    item['publish_time'] = item['publish_time'].strip() #去空格
+AttributeError: 'NoneType' object has no attribute 'strip'
+2020-11-24 12:57:14 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.fangstar.com/xiaoqu/detail/1603> (referer: https://www.fangstar.com/xiaoqu/pg4)
+2020-11-24 12:57:14 [scrapy.core.scraper] ERROR: Error processing {'address': '西山区-西华园片区',
+ 'community': None,
+ 'house_type': None,
+ 'publish_time': None,
+ 'surrounding_school': '福海杨家中心学校船房分校',
+ 'total_price': '15466万',
+ 'url': 'https://www.fangstar.com/xiaoqu/detail/1603',
+ 'uuid': None}
+Traceback (most recent call last):
+  File "e:\py38\lib\site-packages\twisted\internet\defer.py", line 654, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "h:\python-练习\items\realty\realty_spider\realty_spider\pipelines.py", line 19, in process_item
+    item['publish_time'] = item['publish_time'].strip() #去空格
+AttributeError: 'NoneType' object has no attribute 'strip'
+2020-11-24 12:57:15 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.fangstar.com/xiaoqu/detail/1602> (referer: https://www.fangstar.com/xiaoqu/pg4)
+2020-11-24 12:57:15 [scrapy.core.scraper] ERROR: Error processing {'address': '西山区-省高院片区',
+ 'community': None,
+ 'house_type': None,
+ 'publish_time': None,
+ 'surrounding_school': None,
+ 'total_price': None,
+ 'url': 'https://www.fangstar.com/xiaoqu/detail/1602',
+ 'uuid': None}
+Traceback (most recent call last):
+  File "e:\py38\lib\site-packages\twisted\internet\defer.py", line 654, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "h:\python-练习\items\realty\realty_spider\realty_spider\pipelines.py", line 19, in process_item
+    item['publish_time'] = item['publish_time'].strip() #去空格
+AttributeError: 'NoneType' object has no attribute 'strip'
+2020-11-24 12:57:15 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.fangstar.com/xiaoqu/detail/1601> (referer: https://www.fangstar.com/xiaoqu/pg4)
+2020-11-24 12:57:16 [scrapy.core.scraper] ERROR: Error processing {'address': '西山区-省高院片区',
+ 'community': None,
+ 'house_type': None,
+ 'publish_time': None,
+ 'surrounding_school': None,
+ 'total_price': None,
+ 'url': 'https://www.fangstar.com/xiaoqu/detail/1601',
+ 'uuid': None}
+Traceback (most recent call last):
+  File "e:\py38\lib\site-packages\twisted\internet\defer.py", line 654, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "h:\python-练习\items\realty\realty_spider\realty_spider\pipelines.py", line 19, in process_item
+    item['publish_time'] = item['publish_time'].strip() #去空格
+AttributeError: 'NoneType' object has no attribute 'strip'
+2020-11-24 12:57:16 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.fangstar.com/xiaoqu/detail/1599> (referer: https://www.fangstar.com/xiaoqu/pg4)
+2020-11-24 12:57:16 [scrapy.core.scraper] ERROR: Error processing {'address': '西山区-省高院片区',
+ 'community': None,
+ 'house_type': None,
+ 'publish_time': None,
+ 'surrounding_school': None,
+ 'total_price': '18305万',
+ 'url': 'https://www.fangstar.com/xiaoqu/detail/1599',
+ 'uuid': None}
+Traceback (most recent call last):
+  File "e:\py38\lib\site-packages\twisted\internet\defer.py", line 654, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "h:\python-练习\items\realty\realty_spider\realty_spider\pipelines.py", line 19, in process_item
+    item['publish_time'] = item['publish_time'].strip() #去空格
+AttributeError: 'NoneType' object has no attribute 'strip'
+2020-11-24 12:57:16 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.fangstar.com/xiaoqu/detail/1598> (referer: https://www.fangstar.com/xiaoqu/pg4)
+2020-11-24 12:57:16 [scrapy.core.scraper] ERROR: Error processing {'address': '西山区-省高院片区',
+ 'community': None,
+ 'house_type': None,
+ 'publish_time': None,
+ 'surrounding_school': None,
+ 'total_price': '20425万',
+ 'url': 'https://www.fangstar.com/xiaoqu/detail/1598',
+ 'uuid': None}
+Traceback (most recent call last):
+  File "e:\py38\lib\site-packages\twisted\internet\defer.py", line 654, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "h:\python-练习\items\realty\realty_spider\realty_spider\pipelines.py", line 19, in process_item
+    item['publish_time'] = item['publish_time'].strip() #去空格
+AttributeError: 'NoneType' object has no attribute 'strip'
+2020-11-24 12:57:17 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.fangstar.com/xiaoqu/detail/1597> (referer: https://www.fangstar.com/xiaoqu/pg4)
+2020-11-24 12:57:17 [scrapy.core.scraper] ERROR: Error processing {'address': '官渡区-关上片区',
+ 'community': None,
+ 'house_type': None,
+ 'publish_time': None,
+ 'surrounding_school': '\r\n'
+                       '                                    距离地铁1号线昆明火车站站1328m',
+ 'total_price': '13982万',
+ 'url': 'https://www.fangstar.com/xiaoqu/detail/1597',
+ 'uuid': None}
+Traceback (most recent call last):
+  File "e:\py38\lib\site-packages\twisted\internet\defer.py", line 654, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "h:\python-练习\items\realty\realty_spider\realty_spider\pipelines.py", line 19, in process_item
+    item['publish_time'] = item['publish_time'].strip() #去空格
+AttributeError: 'NoneType' object has no attribute 'strip'
+2020-11-24 12:57:18 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.fangstar.com/xiaoqu/detail/1596> (referer: https://www.fangstar.com/xiaoqu/pg4)
+2020-11-24 12:57:18 [scrapy.core.scraper] ERROR: Error processing {'address': '西山区-滇池卫城片区',
+ 'community': None,
+ 'house_type': None,
+ 'publish_time': None,
+ 'surrounding_school': '滇池度假区实验学校',
+ 'total_price': '24609万',
+ 'url': 'https://www.fangstar.com/xiaoqu/detail/1596',
+ 'uuid': None}
+Traceback (most recent call last):
+  File "e:\py38\lib\site-packages\twisted\internet\defer.py", line 654, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "h:\python-练习\items\realty\realty_spider\realty_spider\pipelines.py", line 19, in process_item
+    item['publish_time'] = item['publish_time'].strip() #去空格
+AttributeError: 'NoneType' object has no attribute 'strip'
+2020-11-24 12:57:18 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.fangstar.com/xiaoqu/detail/1595> (referer: https://www.fangstar.com/xiaoqu/pg4)
+2020-11-24 12:57:18 [scrapy.core.scraper] ERROR: Error processing {'address': '西山区-福海片区',
+ 'community': None,
+ 'house_type': None,
+ 'publish_time': None,
+ 'surrounding_school': None,
+ 'total_price': '17987万',
+ 'url': 'https://www.fangstar.com/xiaoqu/detail/1595',
+ 'uuid': None}
+Traceback (most recent call last):
+  File "e:\py38\lib\site-packages\twisted\internet\defer.py", line 654, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "h:\python-练习\items\realty\realty_spider\realty_spider\pipelines.py", line 19, in process_item
+    item['publish_time'] = item['publish_time'].strip() #去空格
+AttributeError: 'NoneType' object has no attribute 'strip'
+2020-11-24 12:57:19 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.fangstar.com/xiaoqu/detail/1594> (referer: https://www.fangstar.com/xiaoqu/pg4)
+2020-11-24 12:57:19 [scrapy.core.scraper] ERROR: Error processing {'address': '西山区-滇池度假区',
+ 'community': None,
+ 'house_type': None,
+ 'publish_time': None,
+ 'surrounding_school': '滇池度假区第二小学',
+ 'total_price': '21356万',
+ 'url': 'https://www.fangstar.com/xiaoqu/detail/1594',
+ 'uuid': None}
+Traceback (most recent call last):
+  File "e:\py38\lib\site-packages\twisted\internet\defer.py", line 654, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "h:\python-练习\items\realty\realty_spider\realty_spider\pipelines.py", line 19, in process_item
+    item['publish_time'] = item['publish_time'].strip() #去空格
+AttributeError: 'NoneType' object has no attribute 'strip'
+2020-11-24 12:57:20 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.fangstar.com/xiaoqu/pg6> (referer: https://www.fangstar.com/xiaoqu/pg5)
+2020-11-24 12:57:20 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.fangstar.com/xiaoqu/detail/1709> (referer: https://www.fangstar.com/xiaoqu/pg5)
+2020-11-24 12:57:21 [scrapy.core.scraper] ERROR: Error processing {'address': '五华区-高新片区',
+ 'community': None,
+ 'house_type': None,
+ 'publish_time': None,
+ 'surrounding_school': '高新一小海源校区/高新第一实验学校',
+ 'total_price': '15121万',
+ 'url': 'https://www.fangstar.com/xiaoqu/detail/1709',
+ 'uuid': None}
+Traceback (most recent call last):
+  File "e:\py38\lib\site-packages\twisted\internet\defer.py", line 654, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "h:\python-练习\items\realty\realty_spider\realty_spider\pipelines.py", line 19, in process_item
+    item['publish_time'] = item['publish_time'].strip() #去空格
+AttributeError: 'NoneType' object has no attribute 'strip'
+2020-11-24 12:57:21 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.fangstar.com/xiaoqu/detail/1708> (referer: https://www.fangstar.com/xiaoqu/pg5)
+2020-11-24 12:57:21 [scrapy.core.scraper] ERROR: Error processing {'address': '五华区-黄土坡片区',
+ 'community': None,
+ 'house_type': None,
+ 'publish_time': None,
+ 'surrounding_school': '云铜小学',
+ 'total_price': '13042万',
+ 'url': 'https://www.fangstar.com/xiaoqu/detail/1708',
+ 'uuid': None}
+Traceback (most recent call last):
+  File "e:\py38\lib\site-packages\twisted\internet\defer.py", line 654, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "h:\python-练习\items\realty\realty_spider\realty_spider\pipelines.py", line 19, in process_item
+    item['publish_time'] = item['publish_time'].strip() #去空格
+AttributeError: 'NoneType' object has no attribute 'strip'
+2020-11-24 12:57:22 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.fangstar.com/xiaoqu/detail/1707> (referer: https://www.fangstar.com/xiaoqu/pg5)
+2020-11-24 12:57:22 [scrapy.core.scraper] ERROR: Error processing {'address': '五华区-高新片区',
+ 'community': None,
+ 'house_type': None,
+ 'publish_time': None,
+ 'surrounding_school': None,
+ 'total_price': '16575万',
+ 'url': 'https://www.fangstar.com/xiaoqu/detail/1707',
+ 'uuid': None}
+Traceback (most recent call last):
+  File "e:\py38\lib\site-packages\twisted\internet\defer.py", line 654, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "h:\python-练习\items\realty\realty_spider\realty_spider\pipelines.py", line 19, in process_item
+    item['publish_time'] = item['publish_time'].strip() #去空格
+AttributeError: 'NoneType' object has no attribute 'strip'
+2020-11-24 12:57:22 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.fangstar.com/xiaoqu/detail/1706> (referer: https://www.fangstar.com/xiaoqu/pg5)
+2020-11-24 12:57:22 [scrapy.core.scraper] ERROR: Error processing {'address': '五华区-黄土坡片区',
+ 'community': None,
+ 'house_type': None,
+ 'publish_time': None,
+ 'surrounding_school': '五华区外国语实验小学',
+ 'total_price': '14238万',
+ 'url': 'https://www.fangstar.com/xiaoqu/detail/1706',
+ 'uuid': None}
+Traceback (most recent call last):
+  File "e:\py38\lib\site-packages\twisted\internet\defer.py", line 654, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "h:\python-练习\items\realty\realty_spider\realty_spider\pipelines.py", line 19, in process_item
+    item['publish_time'] = item['publish_time'].strip() #去空格
+AttributeError: 'NoneType' object has no attribute 'strip'
+2020-11-24 12:57:23 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.fangstar.com/xiaoqu/detail/1705> (referer: https://www.fangstar.com/xiaoqu/pg5)
+2020-11-24 12:57:23 [scrapy.core.scraper] ERROR: Error processing {'address': '五华区-高新片区',
+ 'community': None,
+ 'house_type': None,
+ 'publish_time': None,
+ 'surrounding_school': '高新一小科医路校区',
+ 'total_price': '13246万',
+ 'url': 'https://www.fangstar.com/xiaoqu/detail/1705',
+ 'uuid': None}
+Traceback (most recent call last):
+  File "e:\py38\lib\site-packages\twisted\internet\defer.py", line 654, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "h:\python-练习\items\realty\realty_spider\realty_spider\pipelines.py", line 19, in process_item
+    item['publish_time'] = item['publish_time'].strip() #去空格
+AttributeError: 'NoneType' object has no attribute 'strip'
+2020-11-24 12:57:23 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.fangstar.com/xiaoqu/detail/1704> (referer: https://www.fangstar.com/xiaoqu/pg5)
+2020-11-24 12:57:24 [scrapy.core.scraper] ERROR: Error processing {'address': '五华区-高新片区',
+ 'community': None,
+ 'house_type': None,
+ 'publish_time': None,
+ 'surrounding_school': '\r\n                                    距离地铁3号线岷山站683m',
+ 'total_price': '17448万',
+ 'url': 'https://www.fangstar.com/xiaoqu/detail/1704',
+ 'uuid': None}
+Traceback (most recent call last):
+  File "e:\py38\lib\site-packages\twisted\internet\defer.py", line 654, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "h:\python-练习\items\realty\realty_spider\realty_spider\pipelines.py", line 19, in process_item
+    item['publish_time'] = item['publish_time'].strip() #去空格
+AttributeError: 'NoneType' object has no attribute 'strip'
+2020-11-24 12:57:24 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.fangstar.com/xiaoqu/detail/1703> (referer: https://www.fangstar.com/xiaoqu/pg5)
+2020-11-24 12:57:24 [scrapy.core.scraper] ERROR: Error processing {'address': '五华区-虹山片区',
+ 'community': None,
+ 'house_type': None,
+ 'publish_time': None,
+ 'surrounding_school': '\r\n'
+                       '                                    距离地铁3号线西苑站1204m',
+ 'total_price': '13462万',
+ 'url': 'https://www.fangstar.com/xiaoqu/detail/1703',
+ 'uuid': None}
+Traceback (most recent call last):
+  File "e:\py38\lib\site-packages\twisted\internet\defer.py", line 654, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "h:\python-练习\items\realty\realty_spider\realty_spider\pipelines.py", line 19, in process_item
+    item['publish_time'] = item['publish_time'].strip() #去空格
+AttributeError: 'NoneType' object has no attribute 'strip'
+2020-11-24 12:57:25 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.fangstar.com/xiaoqu/detail/1702> (referer: https://www.fangstar.com/xiaoqu/pg5)
+2020-11-24 12:57:25 [scrapy.core.scraper] ERROR: Error processing {'address': '西山区-西山区政府片区',
+ 'community': None,
+ 'house_type': None,
+ 'publish_time': None,
+ 'surrounding_school': '\r\n                                    距离地铁3号线西苑站805m',
+ 'total_price': '13284万',
+ 'url': 'https://www.fangstar.com/xiaoqu/detail/1702',
+ 'uuid': None}
+Traceback (most recent call last):
+  File "e:\py38\lib\site-packages\twisted\internet\defer.py", line 654, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "h:\python-练习\items\realty\realty_spider\realty_spider\pipelines.py", line 19, in process_item
+    item['publish_time'] = item['publish_time'].strip() #去空格
+AttributeError: 'NoneType' object has no attribute 'strip'
+2020-11-24 12:57:25 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.fangstar.com/xiaoqu/detail/1701> (referer: https://www.fangstar.com/xiaoqu/pg5)
+2020-11-24 12:57:25 [scrapy.core.scraper] ERROR: Error processing {'address': '西山区-红联片区',
+ 'community': None,
+ 'house_type': None,
+ 'publish_time': None,
+ 'surrounding_school': '\r\n'
+                       '                                    距离地铁3号线西苑站1496m',
+ 'total_price': '13358万',
+ 'url': 'https://www.fangstar.com/xiaoqu/detail/1701',
+ 'uuid': None}
+Traceback (most recent call last):
+  File "e:\py38\lib\site-packages\twisted\internet\defer.py", line 654, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "h:\python-练习\items\realty\realty_spider\realty_spider\pipelines.py", line 19, in process_item
+    item['publish_time'] = item['publish_time'].strip() #去空格
+AttributeError: 'NoneType' object has no attribute 'strip'
+2020-11-24 12:57:26 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.fangstar.com/xiaoqu/detail/1700> (referer: https://www.fangstar.com/xiaoqu/pg5)
+2020-11-24 12:57:26 [scrapy.core.scraper] ERROR: Error processing {'address': '五华区-高新片区',
+ 'community': None,
+ 'house_type': None,
+ 'publish_time': None,
+ 'surrounding_school': '高新一小海源校区/高新第一实验学校',
+ 'total_price': '13027万',
+ 'url': 'https://www.fangstar.com/xiaoqu/detail/1700',
+ 'uuid': None}
+Traceback (most recent call last):
+  File "e:\py38\lib\site-packages\twisted\internet\defer.py", line 654, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "h:\python-练习\items\realty\realty_spider\realty_spider\pipelines.py", line 19, in process_item
+    item['publish_time'] = item['publish_time'].strip() #去空格
+AttributeError: 'NoneType' object has no attribute 'strip'
+2020-11-24 12:57:27 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.fangstar.com/xiaoqu/detail/1699> (referer: https://www.fangstar.com/xiaoqu/pg5)
+2020-11-24 12:57:27 [scrapy.extensions.logstats] INFO: Crawled 97 pages (at 97 pages/min), scraped 0 items (at 0 items/min)
+2020-11-24 12:57:27 [scrapy.core.scraper] ERROR: Error processing {'address': '五华区-虹山片区',
+ 'community': None,
+ 'house_type': None,
+ 'publish_time': None,
+ 'surrounding_school': '\r\n'
+                       '                                    距离地铁3号线市体育馆站948m',
+ 'total_price': '23301万',
+ 'url': 'https://www.fangstar.com/xiaoqu/detail/1699',
+ 'uuid': None}
+Traceback (most recent call last):
+  File "e:\py38\lib\site-packages\twisted\internet\defer.py", line 654, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "h:\python-练习\items\realty\realty_spider\realty_spider\pipelines.py", line 19, in process_item
+    item['publish_time'] = item['publish_time'].strip() #去空格
+AttributeError: 'NoneType' object has no attribute 'strip'
+2020-11-24 12:57:27 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.fangstar.com/xiaoqu/detail/1697> (referer: https://www.fangstar.com/xiaoqu/pg5)
+2020-11-24 12:57:27 [scrapy.core.scraper] ERROR: Error processing {'address': '五华区-高新片区',
+ 'community': None,
+ 'house_type': None,
+ 'publish_time': None,
+ 'surrounding_school': None,
+ 'total_price': '8132万',
+ 'url': 'https://www.fangstar.com/xiaoqu/detail/1697',
+ 'uuid': None}
+Traceback (most recent call last):
+  File "e:\py38\lib\site-packages\twisted\internet\defer.py", line 654, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "h:\python-练习\items\realty\realty_spider\realty_spider\pipelines.py", line 19, in process_item
+    item['publish_time'] = item['publish_time'].strip() #去空格
+AttributeError: 'NoneType' object has no attribute 'strip'
+2020-11-24 12:57:28 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.fangstar.com/xiaoqu/detail/1696> (referer: https://www.fangstar.com/xiaoqu/pg5)
+2020-11-24 12:57:28 [scrapy.core.scraper] ERROR: Error processing {'address': '五华区-虹山片区',
+ 'community': None,
+ 'house_type': None,
+ 'publish_time': None,
+ 'surrounding_school': '\r\n'
+                       '                                    距离地铁3号线市体育馆站1482m',
+ 'total_price': '13509万',
+ 'url': 'https://www.fangstar.com/xiaoqu/detail/1696',
+ 'uuid': None}
+Traceback (most recent call last):
+  File "e:\py38\lib\site-packages\twisted\internet\defer.py", line 654, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "h:\python-练习\items\realty\realty_spider\realty_spider\pipelines.py", line 19, in process_item
+    item['publish_time'] = item['publish_time'].strip() #去空格
+AttributeError: 'NoneType' object has no attribute 'strip'
+2020-11-24 12:57:29 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.fangstar.com/xiaoqu/detail/1694> (referer: https://www.fangstar.com/xiaoqu/pg5)
+2020-11-24 12:57:29 [scrapy.core.scraper] ERROR: Error processing {'address': '五华区-黄土坡片区',
+ 'community': None,
+ 'house_type': None,
+ 'publish_time': None,
+ 'surrounding_school': '\r\n'
+                       '                                    距离地铁3号线西苑站1393m',
+ 'total_price': '12771万',
+ 'url': 'https://www.fangstar.com/xiaoqu/detail/1694',
+ 'uuid': None}
+Traceback (most recent call last):
+  File "e:\py38\lib\site-packages\twisted\internet\defer.py", line 654, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "h:\python-练习\items\realty\realty_spider\realty_spider\pipelines.py", line 19, in process_item
+    item['publish_time'] = item['publish_time'].strip() #去空格
+AttributeError: 'NoneType' object has no attribute 'strip'
+2020-11-24 12:57:29 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.fangstar.com/xiaoqu/detail/1693> (referer: https://www.fangstar.com/xiaoqu/pg5)
+2020-11-24 12:57:29 [scrapy.core.scraper] ERROR: Error processing {'address': '五华区-高新片区',
+ 'community': None,
+ 'house_type': None,
+ 'publish_time': None,
+ 'surrounding_school': '\r\n'
+                       '                                    距离地铁3号线西苑站1405m',
+ 'total_price': '15004万',
+ 'url': 'https://www.fangstar.com/xiaoqu/detail/1693',
+ 'uuid': None}
+Traceback (most recent call last):
+  File "e:\py38\lib\site-packages\twisted\internet\defer.py", line 654, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "h:\python-练习\items\realty\realty_spider\realty_spider\pipelines.py", line 19, in process_item
+    item['publish_time'] = item['publish_time'].strip() #去空格
+AttributeError: 'NoneType' object has no attribute 'strip'
+2020-11-24 12:57:29 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.fangstar.com/xiaoqu/detail/1691> (referer: https://www.fangstar.com/xiaoqu/pg5)
+2020-11-24 12:57:29 [scrapy.core.scraper] ERROR: Error processing {'address': '五华区-黄土坡片区',
+ 'community': None,
+ 'house_type': None,
+ 'publish_time': None,
+ 'surrounding_school': '\r\n'
+                       '                                    距离地铁3号线梁家河站1433m',
+ 'total_price': '11221万',
+ 'url': 'https://www.fangstar.com/xiaoqu/detail/1691',
+ 'uuid': None}
+Traceback (most recent call last):
+  File "e:\py38\lib\site-packages\twisted\internet\defer.py", line 654, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "h:\python-练习\items\realty\realty_spider\realty_spider\pipelines.py", line 19, in process_item
+    item['publish_time'] = item['publish_time'].strip() #去空格
+AttributeError: 'NoneType' object has no attribute 'strip'
+2020-11-24 12:57:30 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.fangstar.com/xiaoqu/pg7> (referer: https://www.fangstar.com/xiaoqu/pg6)
+2020-11-24 12:57:31 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.fangstar.com/xiaoqu/detail/1783> (referer: https://www.fangstar.com/xiaoqu/pg6)
+2020-11-24 12:57:31 [scrapy.core.scraper] ERROR: Error processing {'address': '五华区-高新片区',
+ 'community': None,
+ 'house_type': None,
+ 'publish_time': None,
+ 'surrounding_school': '\r\n'
+                       '                                    距离地铁3号线西苑站1179m',
+ 'total_price': '12684万',
+ 'url': 'https://www.fangstar.com/xiaoqu/detail/1783',
+ 'uuid': None}
+Traceback (most recent call last):
+  File "e:\py38\lib\site-packages\twisted\internet\defer.py", line 654, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "h:\python-练习\items\realty\realty_spider\realty_spider\pipelines.py", line 19, in process_item
+    item['publish_time'] = item['publish_time'].strip() #去空格
+AttributeError: 'NoneType' object has no attribute 'strip'
+2020-11-24 12:57:31 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.fangstar.com/xiaoqu/detail/1782> (referer: https://www.fangstar.com/xiaoqu/pg6)
+2020-11-24 12:57:31 [scrapy.core.scraper] ERROR: Error processing {'address': '五华区-高新片区',
+ 'community': None,
+ 'house_type': None,
+ 'publish_time': None,
+ 'surrounding_school': '\r\n'
+                       '                                    距离地铁3号线西苑站1248m',
+ 'total_price': '13387万',
+ 'url': 'https://www.fangstar.com/xiaoqu/detail/1782',
+ 'uuid': None}
+Traceback (most recent call last):
+  File "e:\py38\lib\site-packages\twisted\internet\defer.py", line 654, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "h:\python-练习\items\realty\realty_spider\realty_spider\pipelines.py", line 19, in process_item
+    item['publish_time'] = item['publish_time'].strip() #去空格
+AttributeError: 'NoneType' object has no attribute 'strip'
+2020-11-24 12:57:32 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.fangstar.com/xiaoqu/detail/1781> (referer: https://www.fangstar.com/xiaoqu/pg6)
+2020-11-24 12:57:32 [scrapy.core.scraper] ERROR: Error processing {'address': '西山区-红联片区',
+ 'community': None,
+ 'house_type': None,
+ 'publish_time': None,
+ 'surrounding_school': '\r\n'
+                       '                                    距离地铁3号线梁家河站688m',
+ 'total_price': '12900万',
+ 'url': 'https://www.fangstar.com/xiaoqu/detail/1781',
+ 'uuid': None}
+Traceback (most recent call last):
+  File "e:\py38\lib\site-packages\twisted\internet\defer.py", line 654, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "h:\python-练习\items\realty\realty_spider\realty_spider\pipelines.py", line 19, in process_item
+    item['publish_time'] = item['publish_time'].strip() #去空格
+AttributeError: 'NoneType' object has no attribute 'strip'
+2020-11-24 12:57:32 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.fangstar.com/xiaoqu/detail/1780> (referer: https://www.fangstar.com/xiaoqu/pg6)
+2020-11-24 12:57:32 [scrapy.core.scraper] ERROR: Error processing {'address': '五华区-高新片区',
+ 'community': None,
+ 'house_type': None,
+ 'publish_time': None,
+ 'surrounding_school': '\r\n'
+                       '                                    距离地铁3号线西苑站1474m',
+ 'total_price': '15902万',
+ 'url': 'https://www.fangstar.com/xiaoqu/detail/1780',
+ 'uuid': None}
+Traceback (most recent call last):
+  File "e:\py38\lib\site-packages\twisted\internet\defer.py", line 654, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "h:\python-练习\items\realty\realty_spider\realty_spider\pipelines.py", line 19, in process_item
+    item['publish_time'] = item['publish_time'].strip() #去空格
+AttributeError: 'NoneType' object has no attribute 'strip'
+2020-11-24 12:57:33 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.fangstar.com/xiaoqu/detail/1779> (referer: https://www.fangstar.com/xiaoqu/pg6)
+2020-11-24 12:57:33 [scrapy.core.scraper] ERROR: Error processing {'address': '西山区-红联片区',
+ 'community': None,
+ 'house_type': None,
+ 'publish_time': None,
+ 'surrounding_school': '\r\n                                    距离地铁3号线西苑站693m',
+ 'total_price': '14349万',
+ 'url': 'https://www.fangstar.com/xiaoqu/detail/1779',
+ 'uuid': None}
+Traceback (most recent call last):
+  File "e:\py38\lib\site-packages\twisted\internet\defer.py", line 654, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "h:\python-练习\items\realty\realty_spider\realty_spider\pipelines.py", line 19, in process_item
+    item['publish_time'] = item['publish_time'].strip() #去空格
+AttributeError: 'NoneType' object has no attribute 'strip'
+2020-11-24 12:57:33 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.fangstar.com/xiaoqu/detail/1778> (referer: https://www.fangstar.com/xiaoqu/pg6)
+2020-11-24 12:57:33 [scrapy.core.scraper] ERROR: Error processing {'address': '西山区-红联片区',
+ 'community': None,
+ 'house_type': None,
+ 'publish_time': None,
+ 'surrounding_school': '\r\n                                    距离地铁3号线西苑站992m',
+ 'total_price': '12979万',
+ 'url': 'https://www.fangstar.com/xiaoqu/detail/1778',
+ 'uuid': None}
+Traceback (most recent call last):
+  File "e:\py38\lib\site-packages\twisted\internet\defer.py", line 654, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "h:\python-练习\items\realty\realty_spider\realty_spider\pipelines.py", line 19, in process_item
+    item['publish_time'] = item['publish_time'].strip() #去空格
+AttributeError: 'NoneType' object has no attribute 'strip'
+2020-11-24 12:57:34 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.fangstar.com/xiaoqu/detail/1777> (referer: https://www.fangstar.com/xiaoqu/pg6)
+2020-11-24 12:57:34 [scrapy.core.scraper] ERROR: Error processing {'address': '西山区-红联片区',
+ 'community': None,
+ 'house_type': None,
+ 'publish_time': None,
+ 'surrounding_school': '\r\n                                    距离地铁3号线西苑站573m',
+ 'total_price': '15195万',
+ 'url': 'https://www.fangstar.com/xiaoqu/detail/1777',
+ 'uuid': None}
+Traceback (most recent call last):
+  File "e:\py38\lib\site-packages\twisted\internet\defer.py", line 654, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "h:\python-练习\items\realty\realty_spider\realty_spider\pipelines.py", line 19, in process_item
+    item['publish_time'] = item['publish_time'].strip() #去空格
+AttributeError: 'NoneType' object has no attribute 'strip'
+2020-11-24 12:57:35 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.fangstar.com/xiaoqu/detail/1775> (referer: https://www.fangstar.com/xiaoqu/pg6)
+2020-11-24 12:57:35 [scrapy.core.scraper] ERROR: Error processing {'address': '西山区-红联片区',
+ 'community': None,
+ 'house_type': None,
+ 'publish_time': None,
+ 'surrounding_school': '\r\n'
+                       '                                    距离地铁3号线梁家河站663m',
+ 'total_price': '11412万',
+ 'url': 'https://www.fangstar.com/xiaoqu/detail/1775',
+ 'uuid': None}
+Traceback (most recent call last):
+  File "e:\py38\lib\site-packages\twisted\internet\defer.py", line 654, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "h:\python-练习\items\realty\realty_spider\realty_spider\pipelines.py", line 19, in process_item
+    item['publish_time'] = item['publish_time'].strip() #去空格
+AttributeError: 'NoneType' object has no attribute 'strip'
+2020-11-24 12:57:36 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.fangstar.com/xiaoqu/detail/1774> (referer: https://www.fangstar.com/xiaoqu/pg6)
+2020-11-24 12:57:36 [scrapy.core.scraper] ERROR: Error processing {'address': '西山区-红联片区',
+ 'community': None,
+ 'house_type': None,
+ 'publish_time': None,
+ 'surrounding_school': '\r\n'
+                       '                                    距离地铁3号线西苑站1251m',
+ 'total_price': None,
+ 'url': 'https://www.fangstar.com/xiaoqu/detail/1774',
+ 'uuid': None}
+Traceback (most recent call last):
+  File "e:\py38\lib\site-packages\twisted\internet\defer.py", line 654, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "h:\python-练习\items\realty\realty_spider\realty_spider\pipelines.py", line 19, in process_item
+    item['publish_time'] = item['publish_time'].strip() #去空格
+AttributeError: 'NoneType' object has no attribute 'strip'
+2020-11-24 12:57:36 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.fangstar.com/xiaoqu/detail/1773> (referer: https://www.fangstar.com/xiaoqu/pg6)
+2020-11-24 12:57:36 [scrapy.core.scraper] ERROR: Error processing {'address': '五华区-虹山片区',
+ 'community': None,
+ 'house_type': None,
+ 'publish_time': None,
+ 'surrounding_school': '\r\n'
+                       '                                    距离地铁3号线梁家河站1079m',
+ 'total_price': None,
+ 'url': 'https://www.fangstar.com/xiaoqu/detail/1773',
+ 'uuid': None}
+Traceback (most recent call last):
+  File "e:\py38\lib\site-packages\twisted\internet\defer.py", line 654, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "h:\python-练习\items\realty\realty_spider\realty_spider\pipelines.py", line 19, in process_item
+    item['publish_time'] = item['publish_time'].strip() #去空格
+AttributeError: 'NoneType' object has no attribute 'strip'
+2020-11-24 12:57:37 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.fangstar.com/xiaoqu/detail/1771> (referer: https://www.fangstar.com/xiaoqu/pg6)
+2020-11-24 12:57:37 [scrapy.core.scraper] ERROR: Error processing {'address': '西山区-红联片区',
+ 'community': None,
+ 'house_type': None,
+ 'publish_time': None,
+ 'surrounding_school': '\r\n'
+                       '                                    距离地铁3号线梁家河站1017m',
+ 'total_price': '12927万',
+ 'url': 'https://www.fangstar.com/xiaoqu/detail/1771',
+ 'uuid': None}
+Traceback (most recent call last):
+  File "e:\py38\lib\site-packages\twisted\internet\defer.py", line 654, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "h:\python-练习\items\realty\realty_spider\realty_spider\pipelines.py", line 19, in process_item
+    item['publish_time'] = item['publish_time'].strip() #去空格
+AttributeError: 'NoneType' object has no attribute 'strip'
+2020-11-24 12:57:37 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.fangstar.com/xiaoqu/detail/1767> (referer: https://www.fangstar.com/xiaoqu/pg6)
+2020-11-24 12:57:37 [scrapy.core.scraper] ERROR: Error processing {'address': '西山区-马街片区',
+ 'community': None,
+ 'house_type': None,
+ 'publish_time': None,
+ 'surrounding_school': '大渔中心学校',
+ 'total_price': '7905万',
+ 'url': 'https://www.fangstar.com/xiaoqu/detail/1767',
+ 'uuid': None}
+Traceback (most recent call last):
+  File "e:\py38\lib\site-packages\twisted\internet\defer.py", line 654, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "h:\python-练习\items\realty\realty_spider\realty_spider\pipelines.py", line 19, in process_item
+    item['publish_time'] = item['publish_time'].strip() #去空格
+AttributeError: 'NoneType' object has no attribute 'strip'
+2020-11-24 12:57:38 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.fangstar.com/xiaoqu/detail/1763> (referer: https://www.fangstar.com/xiaoqu/pg6)
+2020-11-24 12:57:38 [scrapy.core.scraper] ERROR: Error processing {'address': '西山区-西山区政府片区',
+ 'community': None,
+ 'house_type': None,
+ 'publish_time': None,
+ 'surrounding_school': '\r\n                                    距离地铁3号线岷山站769m',
+ 'total_price': '11333万',
+ 'url': 'https://www.fangstar.com/xiaoqu/detail/1763',
+ 'uuid': None}
+Traceback (most recent call last):
+  File "e:\py38\lib\site-packages\twisted\internet\defer.py", line 654, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "h:\python-练习\items\realty\realty_spider\realty_spider\pipelines.py", line 19, in process_item
+    item['publish_time'] = item['publish_time'].strip() #去空格
+AttributeError: 'NoneType' object has no attribute 'strip'
+2020-11-24 12:57:39 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.fangstar.com/xiaoqu/detail/1762> (referer: https://www.fangstar.com/xiaoqu/pg6)
+2020-11-24 12:57:39 [scrapy.core.scraper] ERROR: Error processing {'address': '西山区-西山区政府片区',
+ 'community': None,
+ 'house_type': None,
+ 'publish_time': None,
+ 'surrounding_school': '\r\n'
+                       '                                    距离地铁3号线岷山站1325m',
+ 'total_price': '13167万',
+ 'url': 'https://www.fangstar.com/xiaoqu/detail/1762',
+ 'uuid': None}
+Traceback (most recent call last):
+  File "e:\py38\lib\site-packages\twisted\internet\defer.py", line 654, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "h:\python-练习\items\realty\realty_spider\realty_spider\pipelines.py", line 19, in process_item
+    item['publish_time'] = item['publish_time'].strip() #去空格
+AttributeError: 'NoneType' object has no attribute 'strip'
+2020-11-24 12:57:39 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.fangstar.com/xiaoqu/detail/1761> (referer: https://www.fangstar.com/xiaoqu/pg6)
+2020-11-24 12:57:40 [scrapy.core.scraper] ERROR: Error processing {'address': '西山区-西山区政府片区',
+ 'community': None,
+ 'house_type': None,
+ 'publish_time': None,
+ 'surrounding_school': '\r\n'
+                       '                                    距离地铁3号线西苑站1050m',
+ 'total_price': '11612万',
+ 'url': 'https://www.fangstar.com/xiaoqu/detail/1761',
+ 'uuid': None}
+Traceback (most recent call last):
+  File "e:\py38\lib\site-packages\twisted\internet\defer.py", line 654, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "h:\python-练习\items\realty\realty_spider\realty_spider\pipelines.py", line 19, in process_item
+    item['publish_time'] = item['publish_time'].strip() #去空格
+AttributeError: 'NoneType' object has no attribute 'strip'
+2020-11-24 12:57:40 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.fangstar.com/xiaoqu/detail/1760> (referer: https://www.fangstar.com/xiaoqu/pg6)
+2020-11-24 12:57:40 [scrapy.core.scraper] ERROR: Error processing {'address': '西山区-西坝片区',
+ 'community': None,
+ 'house_type': None,
+ 'publish_time': None,
+ 'surrounding_school': '西华园小学',
+ 'total_price': '12692万',
+ 'url': 'https://www.fangstar.com/xiaoqu/detail/1760',
+ 'uuid': None}
+Traceback (most recent call last):
+  File "e:\py38\lib\site-packages\twisted\internet\defer.py", line 654, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "h:\python-练习\items\realty\realty_spider\realty_spider\pipelines.py", line 19, in process_item
+    item['publish_time'] = item['publish_time'].strip() #去空格
+AttributeError: 'NoneType' object has no attribute 'strip'
+2020-11-24 12:57:41 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.fangstar.com/xiaoqu/pg8> (referer: https://www.fangstar.com/xiaoqu/pg7)
+2020-11-24 12:57:41 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.fangstar.com/xiaoqu/detail/1848> (referer: https://www.fangstar.com/xiaoqu/pg7)
+2020-11-24 12:57:41 [scrapy.core.scraper] ERROR: Error processing {'address': '西山区-红联片区',
+ 'community': None,
+ 'house_type': None,
+ 'publish_time': None,
+ 'surrounding_school': '\r\n'
+                       '                                    距离地铁3号线西苑站1265m',
+ 'total_price': None,
+ 'url': 'https://www.fangstar.com/xiaoqu/detail/1848',
+ 'uuid': None}
+Traceback (most recent call last):
+  File "e:\py38\lib\site-packages\twisted\internet\defer.py", line 654, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "h:\python-练习\items\realty\realty_spider\realty_spider\pipelines.py", line 19, in process_item
+    item['publish_time'] = item['publish_time'].strip() #去空格
+AttributeError: 'NoneType' object has no attribute 'strip'
+2020-11-24 12:57:42 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.fangstar.com/xiaoqu/detail/1847> (referer: https://www.fangstar.com/xiaoqu/pg7)
+2020-11-24 12:57:42 [scrapy.core.scraper] ERROR: Error processing {'address': '西山区-红联片区',
+ 'community': None,
+ 'house_type': None,
+ 'publish_time': None,
+ 'surrounding_school': '\r\n'
+                       '                                    距离地铁3号线梁家河站985m',
+ 'total_price': '19525万',
+ 'url': 'https://www.fangstar.com/xiaoqu/detail/1847',
+ 'uuid': None}
+Traceback (most recent call last):
+  File "e:\py38\lib\site-packages\twisted\internet\defer.py", line 654, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "h:\python-练习\items\realty\realty_spider\realty_spider\pipelines.py", line 19, in process_item
+    item['publish_time'] = item['publish_time'].strip() #去空格
+AttributeError: 'NoneType' object has no attribute 'strip'
+2020-11-24 12:57:43 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.fangstar.com/xiaoqu/detail/1846> (referer: https://www.fangstar.com/xiaoqu/pg7)
+2020-11-24 12:57:43 [scrapy.core.scraper] ERROR: Error processing {'address': '西山区-西坝片区',
+ 'community': None,
+ 'house_type': None,
+ 'publish_time': None,
+ 'surrounding_school': '西华园小学',
+ 'total_price': '14179万',
+ 'url': 'https://www.fangstar.com/xiaoqu/detail/1846',
+ 'uuid': None}
+Traceback (most recent call last):
+  File "e:\py38\lib\site-packages\twisted\internet\defer.py", line 654, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "h:\python-练习\items\realty\realty_spider\realty_spider\pipelines.py", line 19, in process_item
+    item['publish_time'] = item['publish_time'].strip() #去空格
+AttributeError: 'NoneType' object has no attribute 'strip'
+2020-11-24 12:57:43 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.fangstar.com/xiaoqu/detail/1844> (referer: https://www.fangstar.com/xiaoqu/pg7)
+2020-11-24 12:57:44 [scrapy.core.scraper] ERROR: Error processing {'address': '西山区-西坝片区',
+ 'community': None,
+ 'house_type': None,
+ 'publish_time': None,
+ 'surrounding_school': '\r\n'
+                       '                                    距离地铁3号线市体育馆站1490m',
+ 'total_price': '15303万',
+ 'url': 'https://www.fangstar.com/xiaoqu/detail/1844',
+ 'uuid': None}
+Traceback (most recent call last):
+  File "e:\py38\lib\site-packages\twisted\internet\defer.py", line 654, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "h:\python-练习\items\realty\realty_spider\realty_spider\pipelines.py", line 19, in process_item
+    item['publish_time'] = item['publish_time'].strip() #去空格
+AttributeError: 'NoneType' object has no attribute 'strip'
+2020-11-24 12:57:44 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.fangstar.com/xiaoqu/detail/1843> (referer: https://www.fangstar.com/xiaoqu/pg7)
+2020-11-24 12:57:44 [scrapy.core.scraper] ERROR: Error processing {'address': '西山区-红联片区',
+ 'community': None,
+ 'house_type': None,
+ 'publish_time': None,
+ 'surrounding_school': '\r\n'
+                       '                                    距离地铁3号线梁家河站939m',
+ 'total_price': None,
+ 'url': 'https://www.fangstar.com/xiaoqu/detail/1843',
+ 'uuid': None}
+Traceback (most recent call last):
+  File "e:\py38\lib\site-packages\twisted\internet\defer.py", line 654, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "h:\python-练习\items\realty\realty_spider\realty_spider\pipelines.py", line 19, in process_item
+    item['publish_time'] = item['publish_time'].strip() #去空格
+AttributeError: 'NoneType' object has no attribute 'strip'
+2020-11-24 12:57:45 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.fangstar.com/xiaoqu/detail/1842> (referer: https://www.fangstar.com/xiaoqu/pg7)
+2020-11-24 12:57:45 [scrapy.core.scraper] ERROR: Error processing {'address': '西山区-红联片区',
+ 'community': None,
+ 'house_type': None,
+ 'publish_time': None,
+ 'surrounding_school': '\r\n'
+                       '                                    距离地铁3号线梁家河站1019m',
+ 'total_price': '13151万',
+ 'url': 'https://www.fangstar.com/xiaoqu/detail/1842',
+ 'uuid': None}
+Traceback (most recent call last):
+  File "e:\py38\lib\site-packages\twisted\internet\defer.py", line 654, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "h:\python-练习\items\realty\realty_spider\realty_spider\pipelines.py", line 19, in process_item
+    item['publish_time'] = item['publish_time'].strip() #去空格
+AttributeError: 'NoneType' object has no attribute 'strip'
+2020-11-24 12:57:45 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.fangstar.com/xiaoqu/detail/1841> (referer: https://www.fangstar.com/xiaoqu/pg7)
+2020-11-24 12:57:45 [scrapy.core.scraper] ERROR: Error processing {'address': '五华区-高新片区',
+ 'community': None,
+ 'house_type': None,
+ 'publish_time': None,
+ 'surrounding_school': '高新一小海源校区/高新第一实验学校',
+ 'total_price': '15230万',
+ 'url': 'https://www.fangstar.com/xiaoqu/detail/1841',
+ 'uuid': None}
+Traceback (most recent call last):
+  File "e:\py38\lib\site-packages\twisted\internet\defer.py", line 654, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "h:\python-练习\items\realty\realty_spider\realty_spider\pipelines.py", line 19, in process_item
+    item['publish_time'] = item['publish_time'].strip() #去空格
+AttributeError: 'NoneType' object has no attribute 'strip'
+2020-11-24 12:57:46 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.fangstar.com/xiaoqu/detail/1840> (referer: https://www.fangstar.com/xiaoqu/pg7)
+2020-11-24 12:57:46 [scrapy.core.scraper] ERROR: Error processing {'address': '五华区-黄土坡片区',
+ 'community': None,
+ 'house_type': None,
+ 'publish_time': None,
+ 'surrounding_school': '五华区外国语实验小学',
+ 'total_price': '13147万',
+ 'url': 'https://www.fangstar.com/xiaoqu/detail/1840',
+ 'uuid': None}
+Traceback (most recent call last):
+  File "e:\py38\lib\site-packages\twisted\internet\defer.py", line 654, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "h:\python-练习\items\realty\realty_spider\realty_spider\pipelines.py", line 19, in process_item
+    item['publish_time'] = item['publish_time'].strip() #去空格
+AttributeError: 'NoneType' object has no attribute 'strip'
+2020-11-24 12:57:47 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.fangstar.com/xiaoqu/detail/1839> (referer: https://www.fangstar.com/xiaoqu/pg7)
+2020-11-24 12:57:47 [scrapy.core.scraper] ERROR: Error processing {'address': '五华区-虹山片区',
+ 'community': None,
+ 'house_type': None,
+ 'publish_time': None,
+ 'surrounding_school': '虹山小学',
+ 'total_price': '16715万',
+ 'url': 'https://www.fangstar.com/xiaoqu/detail/1839',
+ 'uuid': None}
+Traceback (most recent call last):
+  File "e:\py38\lib\site-packages\twisted\internet\defer.py", line 654, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "h:\python-练习\items\realty\realty_spider\realty_spider\pipelines.py", line 19, in process_item
+    item['publish_time'] = item['publish_time'].strip() #去空格
+AttributeError: 'NoneType' object has no attribute 'strip'
+2020-11-24 12:57:47 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.fangstar.com/xiaoqu/detail/1838> (referer: https://www.fangstar.com/xiaoqu/pg7)
+2020-11-24 12:57:47 [scrapy.core.scraper] ERROR: Error processing {'address': '五华区-虹山片区',
+ 'community': None,
+ 'house_type': None,
+ 'publish_time': None,
+ 'surrounding_school': '虹山小学',
+ 'total_price': '14378万',
+ 'url': 'https://www.fangstar.com/xiaoqu/detail/1838',
+ 'uuid': None}
+Traceback (most recent call last):
+  File "e:\py38\lib\site-packages\twisted\internet\defer.py", line 654, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "h:\python-练习\items\realty\realty_spider\realty_spider\pipelines.py", line 19, in process_item
+    item['publish_time'] = item['publish_time'].strip() #去空格
+AttributeError: 'NoneType' object has no attribute 'strip'
+2020-11-24 12:57:48 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.fangstar.com/xiaoqu/detail/1837> (referer: https://www.fangstar.com/xiaoqu/pg7)
+2020-11-24 12:57:48 [scrapy.core.scraper] ERROR: Error processing {'address': '五华区-高新片区',
+ 'community': None,
+ 'house_type': None,
+ 'publish_time': None,
+ 'surrounding_school': '高新一小科医路校区',
+ 'total_price': '17763万',
+ 'url': 'https://www.fangstar.com/xiaoqu/detail/1837',
+ 'uuid': None}
+Traceback (most recent call last):
+  File "e:\py38\lib\site-packages\twisted\internet\defer.py", line 654, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "h:\python-练习\items\realty\realty_spider\realty_spider\pipelines.py", line 19, in process_item
+    item['publish_time'] = item['publish_time'].strip() #去空格
+AttributeError: 'NoneType' object has no attribute 'strip'
+2020-11-24 12:57:49 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.fangstar.com/xiaoqu/detail/1836> (referer: https://www.fangstar.com/xiaoqu/pg7)
+2020-11-24 12:57:49 [scrapy.core.scraper] ERROR: Error processing {'address': '西山区-西坝片区',
+ 'community': None,
+ 'house_type': None,
+ 'publish_time': None,
+ 'surrounding_school': '西华园小学',
+ 'total_price': '11809万',
+ 'url': 'https://www.fangstar.com/xiaoqu/detail/1836',
+ 'uuid': None}
+Traceback (most recent call last):
+  File "e:\py38\lib\site-packages\twisted\internet\defer.py", line 654, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "h:\python-练习\items\realty\realty_spider\realty_spider\pipelines.py", line 19, in process_item
+    item['publish_time'] = item['publish_time'].strip() #去空格
+AttributeError: 'NoneType' object has no attribute 'strip'
+2020-11-24 12:57:49 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.fangstar.com/xiaoqu/detail/1835> (referer: https://www.fangstar.com/xiaoqu/pg7)
+2020-11-24 12:57:49 [scrapy.core.scraper] ERROR: Error processing {'address': '西山区-红联片区',
+ 'community': None,
+ 'house_type': None,
+ 'publish_time': None,
+ 'surrounding_school': '\r\n                                    距离地铁3号线岷山站768m',
+ 'total_price': '12363万',
+ 'url': 'https://www.fangstar.com/xiaoqu/detail/1835',
+ 'uuid': None}
+Traceback (most recent call last):
+  File "e:\py38\lib\site-packages\twisted\internet\defer.py", line 654, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "h:\python-练习\items\realty\realty_spider\realty_spider\pipelines.py", line 19, in process_item
+    item['publish_time'] = item['publish_time'].strip() #去空格
+AttributeError: 'NoneType' object has no attribute 'strip'
+2020-11-24 12:57:50 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.fangstar.com/xiaoqu/detail/1834> (referer: https://www.fangstar.com/xiaoqu/pg7)
+2020-11-24 12:57:50 [scrapy.core.scraper] ERROR: Error processing {'address': '西山区-西山区政府片区',
+ 'community': None,
+ 'house_type': None,
+ 'publish_time': None,
+ 'surrounding_school': '\r\n'
+                       '                                    距离地铁3号线昌源中路站1160m',
+ 'total_price': '16814万',
+ 'url': 'https://www.fangstar.com/xiaoqu/detail/1834',
+ 'uuid': None}
+Traceback (most recent call last):
+  File "e:\py38\lib\site-packages\twisted\internet\defer.py", line 654, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "h:\python-练习\items\realty\realty_spider\realty_spider\pipelines.py", line 19, in process_item
+    item['publish_time'] = item['publish_time'].strip() #去空格
+AttributeError: 'NoneType' object has no attribute 'strip'
+2020-11-24 12:57:50 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.fangstar.com/xiaoqu/detail/1833> (referer: https://www.fangstar.com/xiaoqu/pg7)
+2020-11-24 12:57:51 [scrapy.core.scraper] ERROR: Error processing {'address': '西山区-马街片区',
+ 'community': None,
+ 'house_type': None,
+ 'publish_time': None,
+ 'surrounding_school': '\r\n                                    距离地铁3号线岷山站903m',
+ 'total_price': '11587万',
+ 'url': 'https://www.fangstar.com/xiaoqu/detail/1833',
+ 'uuid': None}
+Traceback (most recent call last):
+  File "e:\py38\lib\site-packages\twisted\internet\defer.py", line 654, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "h:\python-练习\items\realty\realty_spider\realty_spider\pipelines.py", line 19, in process_item
+    item['publish_time'] = item['publish_time'].strip() #去空格
+AttributeError: 'NoneType' object has no attribute 'strip'
+2020-11-24 12:57:51 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.fangstar.com/xiaoqu/detail/1832> (referer: https://www.fangstar.com/xiaoqu/pg7)
+2020-11-24 12:57:51 [scrapy.core.scraper] ERROR: Error processing {'address': '西山区-马街片区',
+ 'community': None,
+ 'house_type': None,
+ 'publish_time': None,
+ 'surrounding_school': '\r\n'
+                       '                                    距离地铁3号线岷山站1064m',
+ 'total_price': '13951万',
+ 'url': 'https://www.fangstar.com/xiaoqu/detail/1832',
+ 'uuid': None}
+Traceback (most recent call last):
+  File "e:\py38\lib\site-packages\twisted\internet\defer.py", line 654, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "h:\python-练习\items\realty\realty_spider\realty_spider\pipelines.py", line 19, in process_item
+    item['publish_time'] = item['publish_time'].strip() #去空格
+AttributeError: 'NoneType' object has no attribute 'strip'
+2020-11-24 12:57:52 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.fangstar.com/xiaoqu/pg9> (referer: https://www.fangstar.com/xiaoqu/pg8)
+2020-11-24 12:57:52 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.fangstar.com/xiaoqu/detail/1921> (referer: https://www.fangstar.com/xiaoqu/pg8)
+2020-11-24 12:57:53 [scrapy.core.scraper] ERROR: Error processing {'address': '官渡区-世纪城片区',
+ 'community': None,
+ 'house_type': None,
+ 'publish_time': None,
+ 'surrounding_school': '\r\n'
+                       '                                    距离地铁1号线珥季路站486m',
+ 'total_price': '13068万',
+ 'url': 'https://www.fangstar.com/xiaoqu/detail/1921',
+ 'uuid': None}
+Traceback (most recent call last):
+  File "e:\py38\lib\site-packages\twisted\internet\defer.py", line 654, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "h:\python-练习\items\realty\realty_spider\realty_spider\pipelines.py", line 19, in process_item
+    item['publish_time'] = item['publish_time'].strip() #去空格
+AttributeError: 'NoneType' object has no attribute 'strip'
+2020-11-24 12:57:53 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.fangstar.com/xiaoqu/detail/1920> (referer: https://www.fangstar.com/xiaoqu/pg8)
+2020-11-24 12:57:53 [scrapy.core.scraper] ERROR: Error processing {'address': '官渡区-世纪城片区',
+ 'community': None,
+ 'house_type': None,
+ 'publish_time': None,
+ 'surrounding_school': '\r\n'
+                       '                                    距离地铁1号线珥季路站364m',
+ 'total_price': '12334万',
+ 'url': 'https://www.fangstar.com/xiaoqu/detail/1920',
+ 'uuid': None}
+Traceback (most recent call last):
+  File "e:\py38\lib\site-packages\twisted\internet\defer.py", line 654, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "h:\python-练习\items\realty\realty_spider\realty_spider\pipelines.py", line 19, in process_item
+    item['publish_time'] = item['publish_time'].strip() #去空格
+AttributeError: 'NoneType' object has no attribute 'strip'
+2020-11-24 12:57:54 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.fangstar.com/xiaoqu/detail/1919> (referer: https://www.fangstar.com/xiaoqu/pg8)
+2020-11-24 12:57:54 [scrapy.core.scraper] ERROR: Error processing {'address': '官渡区-世纪城片区',
+ 'community': None,
+ 'house_type': None,
+ 'publish_time': None,
+ 'surrounding_school': '\r\n'
+                       '                                    距离地铁1号线晓东村站1001m',
+ 'total_price': None,
+ 'url': 'https://www.fangstar.com/xiaoqu/detail/1919',
+ 'uuid': None}
+Traceback (most recent call last):
+  File "e:\py38\lib\site-packages\twisted\internet\defer.py", line 654, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "h:\python-练习\items\realty\realty_spider\realty_spider\pipelines.py", line 19, in process_item
+    item['publish_time'] = item['publish_time'].strip() #去空格
+AttributeError: 'NoneType' object has no attribute 'strip'
+2020-11-24 12:57:54 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.fangstar.com/xiaoqu/detail/1917> (referer: https://www.fangstar.com/xiaoqu/pg8)
+2020-11-24 12:57:54 [scrapy.core.scraper] ERROR: Error processing {'address': '官渡区-世纪城片区',
+ 'community': None,
+ 'house_type': None,
+ 'publish_time': None,
+ 'surrounding_school': '\r\n'
+                       '                                    距离地铁1号线珥季路站740m',
+ 'total_price': '12606万',
+ 'url': 'https://www.fangstar.com/xiaoqu/detail/1917',
+ 'uuid': None}
+Traceback (most recent call last):
+  File "e:\py38\lib\site-packages\twisted\internet\defer.py", line 654, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "h:\python-练习\items\realty\realty_spider\realty_spider\pipelines.py", line 19, in process_item
+    item['publish_time'] = item['publish_time'].strip() #去空格
+AttributeError: 'NoneType' object has no attribute 'strip'
+2020-11-24 12:57:55 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.fangstar.com/xiaoqu/detail/1916> (referer: https://www.fangstar.com/xiaoqu/pg8)
+2020-11-24 12:57:55 [scrapy.core.scraper] ERROR: Error processing {'address': '官渡区-世纪城片区',
+ 'community': None,
+ 'house_type': None,
+ 'publish_time': None,
+ 'surrounding_school': '\r\n'
+                       '                                    距离地铁1号线晓东村站1015m',
+ 'total_price': '22081万',
+ 'url': 'https://www.fangstar.com/xiaoqu/detail/1916',
+ 'uuid': None}
+Traceback (most recent call last):
+  File "e:\py38\lib\site-packages\twisted\internet\defer.py", line 654, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "h:\python-练习\items\realty\realty_spider\realty_spider\pipelines.py", line 19, in process_item
+    item['publish_time'] = item['publish_time'].strip() #去空格
+AttributeError: 'NoneType' object has no attribute 'strip'
+2020-11-24 12:57:55 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.fangstar.com/xiaoqu/detail/1915> (referer: https://www.fangstar.com/xiaoqu/pg8)
+2020-11-24 12:57:55 [scrapy.core.scraper] ERROR: Error processing {'address': '官渡区-世纪城片区',
+ 'community': None,
+ 'house_type': None,
+ 'publish_time': None,
+ 'surrounding_school': '云南师范大学附属小学世纪金源学校',
+ 'total_price': '17925万',
+ 'url': 'https://www.fangstar.com/xiaoqu/detail/1915',
+ 'uuid': None}
+Traceback (most recent call last):
+  File "e:\py38\lib\site-packages\twisted\internet\defer.py", line 654, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "h:\python-练习\items\realty\realty_spider\realty_spider\pipelines.py", line 19, in process_item
+    item['publish_time'] = item['publish_time'].strip() #去空格
+AttributeError: 'NoneType' object has no attribute 'strip'
+2020-11-24 12:57:56 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.fangstar.com/xiaoqu/detail/1912> (referer: https://www.fangstar.com/xiaoqu/pg8)
+2020-11-24 12:57:56 [scrapy.core.scraper] ERROR: Error processing {'address': '官渡区-世纪城片区',
+ 'community': None,
+ 'house_type': None,
+ 'publish_time': None,
+ 'surrounding_school': '\r\n'
+                       '                                    距离地铁1号线珥季路站1416m',
+ 'total_price': '11761万',
+ 'url': 'https://www.fangstar.com/xiaoqu/detail/1912',
+ 'uuid': None}
+Traceback (most recent call last):
+  File "e:\py38\lib\site-packages\twisted\internet\defer.py", line 654, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "h:\python-练习\items\realty\realty_spider\realty_spider\pipelines.py", line 19, in process_item
+    item['publish_time'] = item['publish_time'].strip() #去空格
+AttributeError: 'NoneType' object has no attribute 'strip'
+2020-11-24 12:57:57 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.fangstar.com/xiaoqu/detail/1911> (referer: https://www.fangstar.com/xiaoqu/pg8)
+2020-11-24 12:57:57 [scrapy.core.scraper] ERROR: Error processing {'address': '官渡区-世纪城片区',
+ 'community': None,
+ 'house_type': None,
+ 'publish_time': None,
+ 'surrounding_school': '云南师范大学附属小学世纪金源学校',
+ 'total_price': '11906万',
+ 'url': 'https://www.fangstar.com/xiaoqu/detail/1911',
+ 'uuid': None}
+Traceback (most recent call last):
+  File "e:\py38\lib\site-packages\twisted\internet\defer.py", line 654, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "h:\python-练习\items\realty\realty_spider\realty_spider\pipelines.py", line 19, in process_item
+    item['publish_time'] = item['publish_time'].strip() #去空格
+AttributeError: 'NoneType' object has no attribute 'strip'
+2020-11-24 12:57:57 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.fangstar.com/xiaoqu/detail/1909> (referer: https://www.fangstar.com/xiaoqu/pg8)
+2020-11-24 12:57:57 [scrapy.core.scraper] ERROR: Error processing {'address': '官渡区-世纪城片区',
+ 'community': None,
+ 'house_type': None,
+ 'publish_time': None,
+ 'surrounding_school': '云南师范大学附属小学世纪金源学校',
+ 'total_price': '11989万',
+ 'url': 'https://www.fangstar.com/xiaoqu/detail/1909',
+ 'uuid': None}
+Traceback (most recent call last):
+  File "e:\py38\lib\site-packages\twisted\internet\defer.py", line 654, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "h:\python-练习\items\realty\realty_spider\realty_spider\pipelines.py", line 19, in process_item
+    item['publish_time'] = item['publish_time'].strip() #去空格
+AttributeError: 'NoneType' object has no attribute 'strip'
+2020-11-24 12:57:58 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.fangstar.com/xiaoqu/detail/1907> (referer: https://www.fangstar.com/xiaoqu/pg8)
+2020-11-24 12:57:58 [scrapy.core.scraper] ERROR: Error processing {'address': '官渡区-东聚片区',
+ 'community': None,
+ 'house_type': None,
+ 'publish_time': None,
+ 'surrounding_school': '\r\n'
+                       '                                    距离地铁1号线昌宏西路站533m',
+ 'total_price': '14267万',
+ 'url': 'https://www.fangstar.com/xiaoqu/detail/1907',
+ 'uuid': None}
+Traceback (most recent call last):
+  File "e:\py38\lib\site-packages\twisted\internet\defer.py", line 654, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "h:\python-练习\items\realty\realty_spider\realty_spider\pipelines.py", line 19, in process_item
+    item['publish_time'] = item['publish_time'].strip() #去空格
+AttributeError: 'NoneType' object has no attribute 'strip'
+2020-11-24 12:57:58 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.fangstar.com/xiaoqu/detail/1906> (referer: https://www.fangstar.com/xiaoqu/pg8)
+2020-11-24 12:57:59 [scrapy.core.scraper] ERROR: Error processing {'address': '官渡区-世纪城片区',
+ 'community': None,
+ 'house_type': None,
+ 'publish_time': None,
+ 'surrounding_school': '云南师范大学附属樱花语小学',
+ 'total_price': '16006万',
+ 'url': 'https://www.fangstar.com/xiaoqu/detail/1906',
+ 'uuid': None}
+Traceback (most recent call last):
+  File "e:\py38\lib\site-packages\twisted\internet\defer.py", line 654, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "h:\python-练习\items\realty\realty_spider\realty_spider\pipelines.py", line 19, in process_item
+    item['publish_time'] = item['publish_time'].strip() #去空格
+AttributeError: 'NoneType' object has no attribute 'strip'
+2020-11-24 12:57:59 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.fangstar.com/xiaoqu/detail/1904> (referer: https://www.fangstar.com/xiaoqu/pg8)
+2020-11-24 12:57:59 [scrapy.core.scraper] ERROR: Error processing {'address': '官渡区-世纪城片区',
+ 'community': None,
+ 'house_type': None,
+ 'publish_time': None,
+ 'surrounding_school': '\r\n'
+                       '                                    距离地铁1号线珥季路站1223m',
+ 'total_price': '12783万',
+ 'url': 'https://www.fangstar.com/xiaoqu/detail/1904',
+ 'uuid': None}
+Traceback (most recent call last):
+  File "e:\py38\lib\site-packages\twisted\internet\defer.py", line 654, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "h:\python-练习\items\realty\realty_spider\realty_spider\pipelines.py", line 19, in process_item
+    item['publish_time'] = item['publish_time'].strip() #去空格
+AttributeError: 'NoneType' object has no attribute 'strip'
+2020-11-24 12:58:00 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.fangstar.com/xiaoqu/detail/1903> (referer: https://www.fangstar.com/xiaoqu/pg8)
+2020-11-24 12:58:00 [scrapy.core.scraper] ERROR: Error processing {'address': '官渡区-世纪城片区',
+ 'community': None,
+ 'house_type': None,
+ 'publish_time': None,
+ 'surrounding_school': '\r\n'
+                       '                                    距离地铁1号线珥季路站1246m',
+ 'total_price': '13124万',
+ 'url': 'https://www.fangstar.com/xiaoqu/detail/1903',
+ 'uuid': None}
+Traceback (most recent call last):
+  File "e:\py38\lib\site-packages\twisted\internet\defer.py", line 654, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "h:\python-练习\items\realty\realty_spider\realty_spider\pipelines.py", line 19, in process_item
+    item['publish_time'] = item['publish_time'].strip() #去空格
+AttributeError: 'NoneType' object has no attribute 'strip'
+2020-11-24 12:58:00 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.fangstar.com/xiaoqu/detail/1902> (referer: https://www.fangstar.com/xiaoqu/pg8)
+2020-11-24 12:58:00 [scrapy.core.scraper] ERROR: Error processing {'address': '官渡区-世纪城片区',
+ 'community': None,
+ 'house_type': None,
+ 'publish_time': None,
+ 'surrounding_school': '云南师范大学附属小学世纪金源学校',
+ 'total_price': '14077万',
+ 'url': 'https://www.fangstar.com/xiaoqu/detail/1902',
+ 'uuid': None}
+Traceback (most recent call last):
+  File "e:\py38\lib\site-packages\twisted\internet\defer.py", line 654, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "h:\python-练习\items\realty\realty_spider\realty_spider\pipelines.py", line 19, in process_item
+    item['publish_time'] = item['publish_time'].strip() #去空格
+AttributeError: 'NoneType' object has no attribute 'strip'
+2020-11-24 12:58:01 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.fangstar.com/xiaoqu/detail/1901> (referer: https://www.fangstar.com/xiaoqu/pg8)
+2020-11-24 12:58:01 [scrapy.core.scraper] ERROR: Error processing {'address': '官渡区-世纪城片区',
+ 'community': None,
+ 'house_type': None,
+ 'publish_time': None,
+ 'surrounding_school': '\r\n'
+                       '                                    距离地铁1号线晓东村站1347m',
+ 'total_price': '13231万',
+ 'url': 'https://www.fangstar.com/xiaoqu/detail/1901',
+ 'uuid': None}
+Traceback (most recent call last):
+  File "e:\py38\lib\site-packages\twisted\internet\defer.py", line 654, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "h:\python-练习\items\realty\realty_spider\realty_spider\pipelines.py", line 19, in process_item
+    item['publish_time'] = item['publish_time'].strip() #去空格
+AttributeError: 'NoneType' object has no attribute 'strip'
+2020-11-24 12:58:02 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.fangstar.com/xiaoqu/detail/1899> (referer: https://www.fangstar.com/xiaoqu/pg8)
+2020-11-24 12:58:02 [scrapy.core.scraper] ERROR: Error processing {'address': '官渡区-世纪城片区',
+ 'community': None,
+ 'house_type': None,
+ 'publish_time': None,
+ 'surrounding_school': '\r\n'
+                       '                                    距离地铁1号线珥季路站888m',
+ 'total_price': '12638万',
+ 'url': 'https://www.fangstar.com/xiaoqu/detail/1899',
+ 'uuid': None}
+Traceback (most recent call last):
+  File "e:\py38\lib\site-packages\twisted\internet\defer.py", line 654, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "h:\python-练习\items\realty\realty_spider\realty_spider\pipelines.py", line 19, in process_item
+    item['publish_time'] = item['publish_time'].strip() #去空格
+AttributeError: 'NoneType' object has no attribute 'strip'
+2020-11-24 12:58:02 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.fangstar.com/xiaoqu/pg10> (referer: https://www.fangstar.com/xiaoqu/pg9)
+2020-11-24 12:58:03 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.fangstar.com/xiaoqu/detail/2024> (referer: https://www.fangstar.com/xiaoqu/pg9)
+2020-11-24 12:58:03 [scrapy.core.scraper] ERROR: Error processing {'address': '官渡区-新亚洲片区',
+ 'community': None,
+ 'house_type': None,
+ 'publish_time': None,
+ 'surrounding_school': '\r\n'
+                       '                                    距离地铁1号线星耀路站941m',
+ 'total_price': '16698万',
+ 'url': 'https://www.fangstar.com/xiaoqu/detail/2024',
+ 'uuid': None}
+Traceback (most recent call last):
+  File "e:\py38\lib\site-packages\twisted\internet\defer.py", line 654, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "h:\python-练习\items\realty\realty_spider\realty_spider\pipelines.py", line 19, in process_item
+    item['publish_time'] = item['publish_time'].strip() #去空格
+AttributeError: 'NoneType' object has no attribute 'strip'
+2020-11-24 12:58:03 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.fangstar.com/xiaoqu/detail/2023> (referer: https://www.fangstar.com/xiaoqu/pg9)
+2020-11-24 12:58:03 [scrapy.core.scraper] ERROR: Error processing {'address': '官渡区-新亚洲片区',
+ 'community': None,
+ 'house_type': None,
+ 'publish_time': None,
+ 'surrounding_school': '\r\n'
+                       '                                    距离地铁1号线星耀路站1128m',
+ 'total_price': '12034万',
+ 'url': 'https://www.fangstar.com/xiaoqu/detail/2023',
+ 'uuid': None}
+Traceback (most recent call last):
+  File "e:\py38\lib\site-packages\twisted\internet\defer.py", line 654, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "h:\python-练习\items\realty\realty_spider\realty_spider\pipelines.py", line 19, in process_item
+    item['publish_time'] = item['publish_time'].strip() #去空格
+AttributeError: 'NoneType' object has no attribute 'strip'
+2020-11-24 12:58:04 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.fangstar.com/xiaoqu/detail/2022> (referer: https://www.fangstar.com/xiaoqu/pg9)
+2020-11-24 12:58:04 [scrapy.core.scraper] ERROR: Error processing {'address': '官渡区-新亚洲片区',
+ 'community': None,
+ 'house_type': None,
+ 'publish_time': None,
+ 'surrounding_school': '\r\n'
+                       '                                    距离地铁1号线星耀路站1314m',
+ 'total_price': '13191万',
+ 'url': 'https://www.fangstar.com/xiaoqu/detail/2022',
+ 'uuid': None}
+Traceback (most recent call last):
+  File "e:\py38\lib\site-packages\twisted\internet\defer.py", line 654, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "h:\python-练习\items\realty\realty_spider\realty_spider\pipelines.py", line 19, in process_item
+    item['publish_time'] = item['publish_time'].strip() #去空格
+AttributeError: 'NoneType' object has no attribute 'strip'
+2020-11-24 12:58:04 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.fangstar.com/xiaoqu/detail/2021> (referer: https://www.fangstar.com/xiaoqu/pg9)
+2020-11-24 12:58:04 [scrapy.core.scraper] ERROR: Error processing {'address': '官渡区-新亚洲片区',
+ 'community': None,
+ 'house_type': None,
+ 'publish_time': None,
+ 'surrounding_school': '\r\n'
+                       '                                    距离地铁1号线星耀路站448m',
+ 'total_price': '12226万',
+ 'url': 'https://www.fangstar.com/xiaoqu/detail/2021',
+ 'uuid': None}
+Traceback (most recent call last):
+  File "e:\py38\lib\site-packages\twisted\internet\defer.py", line 654, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "h:\python-练习\items\realty\realty_spider\realty_spider\pipelines.py", line 19, in process_item
+    item['publish_time'] = item['publish_time'].strip() #去空格
+AttributeError: 'NoneType' object has no attribute 'strip'
+2020-11-24 12:58:05 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.fangstar.com/xiaoqu/detail/2020> (referer: https://www.fangstar.com/xiaoqu/pg9)
+2020-11-24 12:58:05 [scrapy.core.scraper] ERROR: Error processing {'address': '官渡区-新亚洲片区',
+ 'community': None,
+ 'house_type': None,
+ 'publish_time': None,
+ 'surrounding_school': '\r\n'
+                       '                                    距离地铁1号线星耀路站285m',
+ 'total_price': '12607万',
+ 'url': 'https://www.fangstar.com/xiaoqu/detail/2020',
+ 'uuid': None}
+Traceback (most recent call last):
+  File "e:\py38\lib\site-packages\twisted\internet\defer.py", line 654, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "h:\python-练习\items\realty\realty_spider\realty_spider\pipelines.py", line 19, in process_item
+    item['publish_time'] = item['publish_time'].strip() #去空格
+AttributeError: 'NoneType' object has no attribute 'strip'
+2020-11-24 12:58:06 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.fangstar.com/xiaoqu/detail/2019> (referer: https://www.fangstar.com/xiaoqu/pg9)
+2020-11-24 12:58:06 [scrapy.core.scraper] ERROR: Error processing {'address': '官渡区-新亚洲片区',
+ 'community': None,
+ 'house_type': None,
+ 'publish_time': None,
+ 'surrounding_school': '\r\n'
+                       '                                    距离地铁1号线珥季路站1478m',
+ 'total_price': '11602万',
+ 'url': 'https://www.fangstar.com/xiaoqu/detail/2019',
+ 'uuid': None}
+Traceback (most recent call last):
+  File "e:\py38\lib\site-packages\twisted\internet\defer.py", line 654, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "h:\python-练习\items\realty\realty_spider\realty_spider\pipelines.py", line 19, in process_item
+    item['publish_time'] = item['publish_time'].strip() #去空格
+AttributeError: 'NoneType' object has no attribute 'strip'
+2020-11-24 12:58:06 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.fangstar.com/xiaoqu/detail/2018> (referer: https://www.fangstar.com/xiaoqu/pg9)
+2020-11-24 12:58:06 [scrapy.core.scraper] ERROR: Error processing {'address': '官渡区-新亚洲片区',
+ 'community': None,
+ 'house_type': None,
+ 'publish_time': None,
+ 'surrounding_school': '\r\n'
+                       '                                    距离地铁1号线新亚洲体育城站864m',
+ 'total_price': '10786万',
+ 'url': 'https://www.fangstar.com/xiaoqu/detail/2018',
+ 'uuid': None}
+Traceback (most recent call last):
+  File "e:\py38\lib\site-packages\twisted\internet\defer.py", line 654, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "h:\python-练习\items\realty\realty_spider\realty_spider\pipelines.py", line 19, in process_item
+    item['publish_time'] = item['publish_time'].strip() #去空格
+AttributeError: 'NoneType' object has no attribute 'strip'
+2020-11-24 12:58:07 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.fangstar.com/xiaoqu/detail/2017> (referer: https://www.fangstar.com/xiaoqu/pg9)
+2020-11-24 12:58:07 [scrapy.core.scraper] ERROR: Error processing {'address': '官渡区-新亚洲片区',
+ 'community': None,
+ 'house_type': None,
+ 'publish_time': None,
+ 'surrounding_school': '\r\n'
+                       '                                    距离地铁1号线星耀路站1351m',
+ 'total_price': None,
+ 'url': 'https://www.fangstar.com/xiaoqu/detail/2017',
+ 'uuid': None}
+Traceback (most recent call last):
+  File "e:\py38\lib\site-packages\twisted\internet\defer.py", line 654, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "h:\python-练习\items\realty\realty_spider\realty_spider\pipelines.py", line 19, in process_item
+    item['publish_time'] = item['publish_time'].strip() #去空格
+AttributeError: 'NoneType' object has no attribute 'strip'
+2020-11-24 12:58:08 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.fangstar.com/xiaoqu/detail/2015> (referer: https://www.fangstar.com/xiaoqu/pg9)
+2020-11-24 12:58:08 [scrapy.core.scraper] ERROR: Error processing {'address': '官渡区-羊甫片区',
+ 'community': None,
+ 'house_type': None,
+ 'publish_time': None,
+ 'surrounding_school': '昆明学院附属经开学校小学部',
+ 'total_price': '12530万',
+ 'url': 'https://www.fangstar.com/xiaoqu/detail/2015',
+ 'uuid': None}
+Traceback (most recent call last):
+  File "e:\py38\lib\site-packages\twisted\internet\defer.py", line 654, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "h:\python-练习\items\realty\realty_spider\realty_spider\pipelines.py", line 19, in process_item
+    item['publish_time'] = item['publish_time'].strip() #去空格
+AttributeError: 'NoneType' object has no attribute 'strip'
+2020-11-24 12:58:08 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.fangstar.com/xiaoqu/detail/2014> (referer: https://www.fangstar.com/xiaoqu/pg9)
+2020-11-24 12:58:08 [scrapy.core.scraper] ERROR: Error processing {'address': '官渡区-新亚洲片区',
+ 'community': None,
+ 'house_type': None,
+ 'publish_time': None,
+ 'surrounding_school': '\r\n'
+                       '                                    距离地铁1号线星耀路站460m',
+ 'total_price': '12015万',
+ 'url': 'https://www.fangstar.com/xiaoqu/detail/2014',
+ 'uuid': None}
+Traceback (most recent call last):
+  File "e:\py38\lib\site-packages\twisted\internet\defer.py", line 654, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "h:\python-练习\items\realty\realty_spider\realty_spider\pipelines.py", line 19, in process_item
+    item['publish_time'] = item['publish_time'].strip() #去空格
+AttributeError: 'NoneType' object has no attribute 'strip'
+2020-11-24 12:58:09 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.fangstar.com/xiaoqu/detail/2013> (referer: https://www.fangstar.com/xiaoqu/pg9)
+2020-11-24 12:58:09 [scrapy.core.scraper] ERROR: Error processing {'address': '官渡区-新亚洲片区',
+ 'community': None,
+ 'house_type': None,
+ 'publish_time': None,
+ 'surrounding_school': '\r\n'
+                       '                                    距离地铁1号线星耀路站169m',
+ 'total_price': '13523万',
+ 'url': 'https://www.fangstar.com/xiaoqu/detail/2013',
+ 'uuid': None}
+Traceback (most recent call last):
+  File "e:\py38\lib\site-packages\twisted\internet\defer.py", line 654, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "h:\python-练习\items\realty\realty_spider\realty_spider\pipelines.py", line 19, in process_item
+    item['publish_time'] = item['publish_time'].strip() #去空格
+AttributeError: 'NoneType' object has no attribute 'strip'
+2020-11-24 12:58:10 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.fangstar.com/xiaoqu/detail/2012> (referer: https://www.fangstar.com/xiaoqu/pg9)
+2020-11-24 12:58:10 [scrapy.core.scraper] ERROR: Error processing {'address': '官渡区-新亚洲片区',
+ 'community': None,
+ 'house_type': None,
+ 'publish_time': None,
+ 'surrounding_school': '\r\n'
+                       '                                    距离地铁1号线星耀路站355m',
+ 'total_price': '11734万',
+ 'url': 'https://www.fangstar.com/xiaoqu/detail/2012',
+ 'uuid': None}
+Traceback (most recent call last):
+  File "e:\py38\lib\site-packages\twisted\internet\defer.py", line 654, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "h:\python-练习\items\realty\realty_spider\realty_spider\pipelines.py", line 19, in process_item
+    item['publish_time'] = item['publish_time'].strip() #去空格
+AttributeError: 'NoneType' object has no attribute 'strip'
+2020-11-24 12:58:10 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.fangstar.com/xiaoqu/detail/2010> (referer: https://www.fangstar.com/xiaoqu/pg9)
+2020-11-24 12:58:10 [scrapy.core.scraper] ERROR: Error processing {'address': '官渡区-新亚洲片区',
+ 'community': None,
+ 'house_type': None,
+ 'publish_time': None,
+ 'surrounding_school': '\r\n'
+                       '                                    距离地铁1号线星耀路站828m',
+ 'total_price': '11279万',
+ 'url': 'https://www.fangstar.com/xiaoqu/detail/2010',
+ 'uuid': None}
+Traceback (most recent call last):
+  File "e:\py38\lib\site-packages\twisted\internet\defer.py", line 654, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "h:\python-练习\items\realty\realty_spider\realty_spider\pipelines.py", line 19, in process_item
+    item['publish_time'] = item['publish_time'].strip() #去空格
+AttributeError: 'NoneType' object has no attribute 'strip'
+2020-11-24 12:58:11 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.fangstar.com/xiaoqu/detail/2007> (referer: https://www.fangstar.com/xiaoqu/pg9)
+2020-11-24 12:58:11 [scrapy.core.scraper] ERROR: Error processing {'address': '西山区-红联片区',
+ 'community': None,
+ 'house_type': None,
+ 'publish_time': None,
+ 'surrounding_school': '\r\n'
+                       '                                    距离地铁2号线环城南路站992m',
+ 'total_price': None,
+ 'url': 'https://www.fangstar.com/xiaoqu/detail/2007',
+ 'uuid': None}
+Traceback (most recent call last):
+  File "e:\py38\lib\site-packages\twisted\internet\defer.py", line 654, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "h:\python-练习\items\realty\realty_spider\realty_spider\pipelines.py", line 19, in process_item
+    item['publish_time'] = item['publish_time'].strip() #去空格
+AttributeError: 'NoneType' object has no attribute 'strip'
+2020-11-24 12:58:11 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.fangstar.com/xiaoqu/detail/2006> (referer: https://www.fangstar.com/xiaoqu/pg9)
+2020-11-24 12:58:11 [scrapy.core.scraper] ERROR: Error processing {'address': '西山区-西坝片区',
+ 'community': None,
+ 'house_type': None,
+ 'publish_time': None,
+ 'surrounding_school': '西华园小学',
+ 'total_price': '10150万',
+ 'url': 'https://www.fangstar.com/xiaoqu/detail/2006',
+ 'uuid': None}
+Traceback (most recent call last):
+  File "e:\py38\lib\site-packages\twisted\internet\defer.py", line 654, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "h:\python-练习\items\realty\realty_spider\realty_spider\pipelines.py", line 19, in process_item
+    item['publish_time'] = item['publish_time'].strip() #去空格
+AttributeError: 'NoneType' object has no attribute 'strip'
+2020-11-24 12:58:12 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.fangstar.com/xiaoqu/detail/2005> (referer: https://www.fangstar.com/xiaoqu/pg9)
+2020-11-24 12:58:12 [scrapy.core.scraper] ERROR: Error processing {'address': '西山区-红联片区',
+ 'community': None,
+ 'house_type': None,
+ 'publish_time': None,
+ 'surrounding_school': '\r\n'
+                       '                                    距离地铁3号线梁家河站1372m',
+ 'total_price': '12070万',
+ 'url': 'https://www.fangstar.com/xiaoqu/detail/2005',
+ 'uuid': None}
+Traceback (most recent call last):
+  File "e:\py38\lib\site-packages\twisted\internet\defer.py", line 654, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "h:\python-练习\items\realty\realty_spider\realty_spider\pipelines.py", line 19, in process_item
+    item['publish_time'] = item['publish_time'].strip() #去空格
+AttributeError: 'NoneType' object has no attribute 'strip'
+2020-11-24 12:58:12 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.fangstar.com/xiaoqu/pg11> (referer: https://www.fangstar.com/xiaoqu/pg10)
+2020-11-24 12:58:13 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.fangstar.com/xiaoqu/detail/2107> (referer: https://www.fangstar.com/xiaoqu/pg10)
+2020-11-24 12:58:13 [scrapy.core.scraper] ERROR: Error processing {'address': '五华区-小西门片区',
+ 'community': None,
+ 'house_type': None,
+ 'publish_time': None,
+ 'surrounding_school': '\r\n'
+                       '                                    距离地铁3号线市体育馆站1345m',
+ 'total_price': '16563万',
+ 'url': 'https://www.fangstar.com/xiaoqu/detail/2107',
+ 'uuid': None}
+Traceback (most recent call last):
+  File "e:\py38\lib\site-packages\twisted\internet\defer.py", line 654, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "h:\python-练习\items\realty\realty_spider\realty_spider\pipelines.py", line 19, in process_item
+    item['publish_time'] = item['publish_time'].strip() #去空格
+AttributeError: 'NoneType' object has no attribute 'strip'
+2020-11-24 12:58:13 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.fangstar.com/xiaoqu/detail/2106> (referer: https://www.fangstar.com/xiaoqu/pg10)
+2020-11-24 12:58:14 [scrapy.core.scraper] ERROR: Error processing {'address': '官渡区-和平村片区',
+ 'community': None,
+ 'house_type': None,
+ 'publish_time': None,
+ 'surrounding_school': '\r\n'
+                       '                                    距离地铁2号线环城南路站615m',
+ 'total_price': None,
+ 'url': 'https://www.fangstar.com/xiaoqu/detail/2106',
+ 'uuid': None}
+Traceback (most recent call last):
+  File "e:\py38\lib\site-packages\twisted\internet\defer.py", line 654, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "h:\python-练习\items\realty\realty_spider\realty_spider\pipelines.py", line 19, in process_item
+    item['publish_time'] = item['publish_time'].strip() #去空格
+AttributeError: 'NoneType' object has no attribute 'strip'
+2020-11-24 12:58:14 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.fangstar.com/xiaoqu/detail/2105> (referer: https://www.fangstar.com/xiaoqu/pg10)
+2020-11-24 12:58:14 [scrapy.core.scraper] ERROR: Error processing {'address': '西山区-红联片区',
+ 'community': None,
+ 'house_type': None,
+ 'publish_time': None,
+ 'surrounding_school': '\r\n'
+                       '                                    距离地铁3号线西苑站1302m',
+ 'total_price': '13061万',
+ 'url': 'https://www.fangstar.com/xiaoqu/detail/2105',
+ 'uuid': None}
+Traceback (most recent call last):
+  File "e:\py38\lib\site-packages\twisted\internet\defer.py", line 654, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "h:\python-练习\items\realty\realty_spider\realty_spider\pipelines.py", line 19, in process_item
+    item['publish_time'] = item['publish_time'].strip() #去空格
+AttributeError: 'NoneType' object has no attribute 'strip'
+2020-11-24 12:58:14 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.fangstar.com/xiaoqu/detail/2104> (referer: https://www.fangstar.com/xiaoqu/pg10)
+2020-11-24 12:58:15 [scrapy.core.scraper] ERROR: Error processing {'address': '官渡区-南窑片区',
+ 'community': None,
+ 'house_type': None,
+ 'publish_time': None,
+ 'surrounding_school': '\r\n'
+                       '                                    距离地铁2号线环城南路站769m',
+ 'total_price': None,
+ 'url': 'https://www.fangstar.com/xiaoqu/detail/2104',
+ 'uuid': None}
+Traceback (most recent call last):
+  File "e:\py38\lib\site-packages\twisted\internet\defer.py", line 654, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "h:\python-练习\items\realty\realty_spider\realty_spider\pipelines.py", line 19, in process_item
+    item['publish_time'] = item['publish_time'].strip() #去空格
+AttributeError: 'NoneType' object has no attribute 'strip'
+2020-11-24 12:58:15 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.fangstar.com/xiaoqu/detail/2101> (referer: https://www.fangstar.com/xiaoqu/pg10)
+2020-11-24 12:58:15 [scrapy.core.scraper] ERROR: Error processing {'address': '官渡区-和平村片区',
+ 'community': None,
+ 'house_type': None,
+ 'publish_time': None,
+ 'surrounding_school': '\r\n'
+                       '                                    距离地铁2号线环城南路站1222m',
+ 'total_price': None,
+ 'url': 'https://www.fangstar.com/xiaoqu/detail/2101',
+ 'uuid': None}
+Traceback (most recent call last):
+  File "e:\py38\lib\site-packages\twisted\internet\defer.py", line 654, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "h:\python-练习\items\realty\realty_spider\realty_spider\pipelines.py", line 19, in process_item
+    item['publish_time'] = item['publish_time'].strip() #去空格
+AttributeError: 'NoneType' object has no attribute 'strip'
+2020-11-24 12:58:16 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.fangstar.com/xiaoqu/detail/2100> (referer: https://www.fangstar.com/xiaoqu/pg10)
+2020-11-24 12:58:16 [scrapy.core.scraper] ERROR: Error processing {'address': '西山区-西山区政府片区',
+ 'community': None,
+ 'house_type': None,
+ 'publish_time': None,
+ 'surrounding_school': '\r\n'
+                       '                                    距离地铁3号线西苑站1135m',
+ 'total_price': '11493万',
+ 'url': 'https://www.fangstar.com/xiaoqu/detail/2100',
+ 'uuid': None}
+Traceback (most recent call last):
+  File "e:\py38\lib\site-packages\twisted\internet\defer.py", line 654, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "h:\python-练习\items\realty\realty_spider\realty_spider\pipelines.py", line 19, in process_item
+    item['publish_time'] = item['publish_time'].strip() #去空格
+AttributeError: 'NoneType' object has no attribute 'strip'
