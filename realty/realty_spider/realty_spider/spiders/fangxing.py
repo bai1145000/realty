@@ -2,13 +2,13 @@
 import scrapy
 from realty_spider.realty_spider.items import FangxingErshouItems
 import time
+from fangxing.models import FangxingErshouShangpu
 
 class FangxingSpider(scrapy.Spider):
     '''房星'''
     name = 'fangxing'
     allowed_domains = ['fangstar.com']
-    # start_urls = ['https://www.fangstar.com/ershoufang', ]  #二手列表页
-
+    queryset = FangxingErshouShangpu.objects.all()
     def start_requests(self):
         # for i in 
         urls = 'https://www.fangstar.com/ershoufang/'
@@ -21,13 +21,20 @@ class FangxingSpider(scrapy.Spider):
 
     def parse(self, response):
         '''列表页'''
-        cookies = response
+        dd_list = response.xpath('//*[@class="cl trading-area"]/dd')
+        for dd in dd_list:
+            url = dd.xpath('./a/@href').extract_first()
+            yield scrapy.Request(
+                    url=url,
+                    callback= self.parse
+                )
+       
         for i in response.xpath('//*[@class = "house-list fl"]/li'):
             items = {}
             items['url'] = i.xpath('./a/@href').extract_first()
             items['community'] = i.xpath('./div/em[1]/a/text()').extract_first() 
             address = i.xpath('./div/em[2]/span/a/text()').extract()
-            items['address'] = address[0] + '-'+ address[1]
+            items['address'] = address[0] + '-'+ address[1] 
             total_price =  i.xpath('./div/div/h3/text()').extract_first()
             items['total_price'] =  total_price + '万' if total_price else None
             publish_time = i.xpath('./div/em[3]/span/text()').extract_first()

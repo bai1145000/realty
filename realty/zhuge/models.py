@@ -10,8 +10,8 @@ from django.db import models
 
 class ZhugeXiaoqu(models.Model):
     url = models.CharField(max_length=255, blank=True, null=True)
-    community = models.CharField(max_length=20, blank=True, null=True)
-    address = models.CharField(max_length=30, blank=True, null=True)
+    community = models.CharField(max_length=64, blank=True, null=True)
+    address = models.CharField(max_length=64, blank=True, null=True)
     unit_price = models.CharField(max_length=20, blank=True, null=True)
     property_type = models.CharField(max_length=20, blank=True, null=True)
     building_type = models.CharField(max_length=20, blank=True, null=True)
@@ -39,8 +39,7 @@ class ZhugeXiaoqu(models.Model):
     electricity_type = models.CharField(max_length=20, blank=True, null=True)
     communication_equipment = models.CharField(max_length=20, blank=True, null=True)
     lift_service = models.CharField(max_length=20, blank=True, null=True)
-    crawl_time = models.DateTimeField(blank=True, null=True)
+    crawl_time = models.DateTimeField(blank=True, null=True,auto_now=True)
 
     class Meta:
-        managed = False
         db_table = 'zhuge_xiaoqu'

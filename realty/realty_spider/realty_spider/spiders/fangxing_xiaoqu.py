@@ -1,44 +1,51 @@
 # -*- coding: utf-8 -*-
 import scrapy
 from realty_spider.realty_spider.items import FangxingXiaoquItems
+from fangxing.models import FangxingXiaoqu
 
 class FangxingXiaoquSpider(scrapy.Spider):
     name = 'fangxing_xiaoqu'
-    allowed_domains = ['www.fangstar.com']
-    # start_urls = ['https://www.fangstar.com/xiaoqu/']
-
-    def start_requests(self):
-        # for i in 
-        urls = 'https://www.fangstar.com/xiaoqu/'
+    allowed_domains = ['fangstar.com']
+    start_urls = ['https://www.fangstar.com/xiaoqu/xishangqu']
+    queryset = FangxingXiaoqu.objects.all()
+    
+    def start_requests(self):   
+       
         for i in ['guanduqu','wuhuaqu','lanlongqu','chenggongqu','ans','jnq','smx','ylx','fnx','xishangqu',]:
-            url = urls + i
+            url = 'https://www.fangstar.com/xiaoqu/{}'.format(i)
             yield scrapy.Request(
                     url=url,
                     callback= self.parse
                 )
 
-
     def parse(self, response):
         '''小区列表页'''
+        dd_list = response.xpath('//*[@class="cl trading-area"]/dd')
+        for dd in dd_list:
+            url = dd.xpath('./a/@href').extract_first()
+            yield scrapy.Request(url=url,callback= self.parse) #二级地区回调
+
         for i in response.xpath('//*[@class = "house-list fl"]/li'):
             items = {}
             items['url'] = i.xpath('./a/@href').extract_first()
             items['community'] = i.xpath('./div/h3/a/text()').extract_first()
             items['unit_price'] = i.xpath('./div/div[@class="school-price"]/h3/text()').extract_first()
-            items['address'] = i.xpath('.div/em/span[@class="padging-l35 omit"]/text()').extract_first()
+            address = i.xpath('./div/em[2]/span/a/text()').extract()
+            items['address'] = address[0] + '-'+ address[1] 
+    
             building_year = i.xpath('./div/em[1]/span/text()').extract_first()
             items['building_year'] = building_year.split('：')[1][:-1] if '暂' in building_year else None
             items['surrounding_school'] = i.xpath('./div/div[@class="list-label-box"]/span/text()').extract_first()
             # yield items
             yield scrapy.Request(
                 response.urljoin(items['url']), callback = self.parse_details, meta={'items': items}
-                )
+                ) #回调详情
         
-        next_url = response.xpath('//*[@class = "tcdPageCode"]/a[last()]/@href').extract_first() #执行回调
+        next_url = response.xpath('//*[@class = "tcdPageCode"]/a[last()]/@href').extract_first()
         if next_url:
-            yield scrapy.Request(response.urljoin(next_url), callback= self.parse)
+            yield scrapy.Request(response.urljoin(next_url), callback= self.parse)  #执行回调
 
-    def parse_details(self,response):
+    def parse_details(self, response):
         '''详情页'''
         meta_items = response.meta.get('items')
         item = FangxingXiaoquItems()
@@ -80,6 +87,7 @@ class FangxingXiaoquSpider(scrapy.Spider):
 
         item.update(meta_items)
         del meta_items #释放资源
+        del xq_fields
         yield  item
 
     @staticmethod

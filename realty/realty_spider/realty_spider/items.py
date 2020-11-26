@@ -8,7 +8,7 @@
 import scrapy
 from scrapy_djangoitem import DjangoItem
 
-from fangxing.models import FangxingErshouShangpu, FangxingXiaoqu
+from fangxing.models import FangxingErshouShangpu, FangxingXiaoqu ,FangxingRent, FangxingXuexiao
 from zhuge.models import  ZhugeXiaoqu
    
 
@@ -17,8 +17,18 @@ class FangxingErshouItems(DjangoItem):
     django_model = FangxingErshouShangpu
 
 class FangxingXiaoquItems(DjangoItem):
-    '''房星xiaoqu'''
+    '''房星小区'''
     django_model = FangxingXiaoqu
+
+class FangxingZufangItems(DjangoItem):
+    '''房星租房'''
+    django_model = FangxingRent
+
+class FangxingSchoolItems(DjangoItem):
+    '''房星学校'''
+    django_model = FangxingXuexiao
+
+
 
 class ZhugexiaoquItems(DjangoItem):
     '''诸葛小区'''

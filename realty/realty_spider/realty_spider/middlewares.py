@@ -111,11 +111,13 @@ from scrapy.http import HtmlResponse
 from twisted.web.client import ResponseFailed
 from scrapy.core.downloader.handlers.http11 import TunnelError
 
-class ProcessAllExceptionMiddleware(object):
+class MyMiddleware(object):
     ALL_EXCEPTIONS = (defer.TimeoutError, TimeoutError, DNSLookupError,
                       ConnectionRefusedError, ConnectionDone, ConnectError,
                       ConnectionLost, TCPTimedOutError, ResponseFailed,
                       IOError, TunnelError)
+    
+    process_exception_list=[]
     def process_response(self,request,response,spider):
         #捕获状态码为40x/50x的response
         if str(response.status).startswith('4') or str(response.status).startswith('5'):

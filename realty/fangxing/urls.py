@@ -4,6 +4,6 @@ from .views import FangxingErshouviews
 app_name = 'fangxing'
 
 urlpatterns = [
-    path('ershoufang/', FangxingErshouviews.as_view()), #二手房
+    path('spider/', FangxingErshouviews.as_view()), #二手房
    
 ]
