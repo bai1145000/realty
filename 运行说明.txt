@@ -1,0 +1,14 @@
+本项目采用django + scrapy 
+运行方法一:
+在终端输入 scrapy crawl xxxx     可选参数-a method=update 对爬虫进行更新
+xxx代表爬虫名 每个类中的name
+运行方法二
+先运行django
+python manage.py runserver   
+在运行
+scrapyd 
+通过接口访问
+post:  http://127.0.0.1:8000/zhuge/spider/
+data  :  project   fangxing  project   xxxx    爬虫名
+运行方法三,
+通过main文件启动
