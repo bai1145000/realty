@@ -97,7 +97,7 @@ class FangxingXiaoqu(models.Model):
     surrounding_school = models.CharField(max_length=30, blank=True, null=True)
     rent_num = models.IntegerField(blank=True, null=True)
     sale_num = models.IntegerField(blank=True, null=True)
-    community_detail = models.CharField(max_length=255, blank=True, null=True)
+    community_detail = models.TextField(max_length=500, blank=True, null=True)
     park_price = models.CharField(max_length=64, blank=True, null=True)
     building_num = models.IntegerField(blank=True, null=True)
     water_price = models.CharField(max_length=64, blank=True, null=True)
@@ -126,7 +126,6 @@ class FangxingXiaoqu(models.Model):
         managed = False
         db_table = 'fangxing_xiaoqu'
 
-
 class FangxingXuexiao(models.Model):
     '''房星学校'''
     school = models.CharField(max_length=64, blank=True, null=True)
@@ -136,8 +135,10 @@ class FangxingXuexiao(models.Model):
     location = models.CharField(max_length=64, blank=True, null=True)
     pair_school = models.CharField(max_length=64, blank=True, null=True)
     uuid = models.CharField(max_length=64, blank=True, null=True)
+    phone_numbers = models.CharField(max_length=32,blank=True,null=True,verbose_name='电话号码')
+    school_url = models.CharField(max_length=255,blank=True,null=True,verbose_name='学校官网')
     url = models.CharField(max_length=64, blank=True, null=True)
-    crawl_time = models.DateTimeField(blank=True, null=True)
+    crawl_time = models.DateTimeField(auto_now=True,blank=True, null=True)
 
     class Meta:
         managed = False

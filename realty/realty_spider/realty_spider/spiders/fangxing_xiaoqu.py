@@ -6,25 +6,28 @@ from fangxing.models import FangxingXiaoqu
 class FangxingXiaoquSpider(scrapy.Spider):
     name = 'fangxing_xiaoqu'
     allowed_domains = ['fangstar.com']
-    start_urls = ['https://www.fangstar.com/xiaoqu/xishangqu']
     queryset = FangxingXiaoqu.objects.all()
+
+    def __init__(self,method=None,*args, **kwargs):
+        super(FangxingXiaoquSpider,self).__init__(*args, **kwargs)
+        self.method = method
     
     def start_requests(self):   
-       
-        for i in ['guanduqu','wuhuaqu','lanlongqu','chenggongqu','ans','jnq','smx','ylx','fnx','xishangqu',]:
+        #
+        for i in ['xishanqu','jnq','smx','ylx','guanduqu','wuhuaqu','lanlongqu','chenggongqu','ans','fmx']:
             url = 'https://www.fangstar.com/xiaoqu/{}'.format(i)
             yield scrapy.Request(
                     url=url,
                     callback= self.parse
                 )
-
-    def parse(self, response):
+    def parse(self,response):
         '''小区列表页'''
         dd_list = response.xpath('//*[@class="cl trading-area"]/dd')
-        for dd in dd_list:
+        for dd in dd_list[1:]:
             url = dd.xpath('./a/@href').extract_first()
-            yield scrapy.Request(url=url,callback= self.parse) #二级地区回调
+            yield scrapy.Request(url=url,callback= self.list) #二级地区回调
 
+    def list(self, response):
         for i in response.xpath('//*[@class = "house-list fl"]/li'):
             items = {}
             items['url'] = i.xpath('./a/@href').extract_first()
@@ -40,10 +43,10 @@ class FangxingXiaoquSpider(scrapy.Spider):
             yield scrapy.Request(
                 response.urljoin(items['url']), callback = self.parse_details, meta={'items': items}
                 ) #回调详情
-        
+                
         next_url = response.xpath('//*[@class = "tcdPageCode"]/a[last()]/@href').extract_first()
         if next_url:
-            yield scrapy.Request(response.urljoin(next_url), callback= self.parse)  #执行回调
+            yield scrapy.Request(response.urljoin(next_url), callback= self.list)  #执行回调
 
     def parse_details(self, response):
         '''详情页'''
@@ -65,9 +68,9 @@ class FangxingXiaoquSpider(scrapy.Spider):
         item['sale_num'] = sale_num.split('(')[1].split('套')[0] if sale_num else None #在售房源
 
         xq_fields = {   #存储extra_items的引用
-           'community_detail':'小区详情','park_price':'停车费','building_num':'楼栋总数','water_price':'自来水费',
-            'lift_price':'电梯使用费','decoration_margin':'装修保证金','maintenance_fund':'维修基金','health_price':'卫生费用',
-            'gas_price':'gas_price','junk_cleaning_price':'垃圾清理费','wastewater_price':'污水处理费','construction_waste_price':'建筑垃圾清理费',
+            'park_price':'停车费','building_num':'楼栋总数','water_price':'自来水费',
+            'lift_price':'电梯使用费','decoration_margin':'装修保证金','maintenance_fund':'维修基金','health_price':'卫生费',
+            'gas_price':'燃气费','junk_cleaning_price':'垃圾清理费','wastewater_price':'污水处理费','construction_waste_price':'建筑垃圾清运费',
             'electricity_price':'电费','bicycle_parking_price':'非机动车停车费','other_property_price':'其他物业费','property_phone':'物业办公电话','deal_unit_mom':'',
             'property_address':'物业办公地址','street_office':'所辖街道办','police_station':'所辖派出所','listing_unit_price':'挂牌均价','listing_unit_mom':'挂牌均价的月环比',
             'deal_unit_price':'成交均价','deal_unit_mom':'成交均价的月环比'} 
@@ -79,11 +82,16 @@ class FangxingXiaoquSpider(scrapy.Spider):
             if  len(key) != 0:
                 meta_items.update( {key[0]:value})   #动态设置值
 
+        item['community_detail'] = response.xpath('//div[@class="description-text"]/p/text()').extract_first() #小区详情
         average_price = response.xpath('//*[@class="clearfix"]') #均价
         listing_unit_price = average_price.xpath('./li[1]//div/h3/i/text()').extract_first() #挂牌均价
         item['listing_unit_price'] = listing_unit_price + '元/m²' if listing_unit_price else None
+        listing_unit_mom = response.xpath('//li[@class="listed-price"]/p/text()').extract_first()
+        item['listing_unit_mom'] = listing_unit_mom.split('：')[1] if listing_unit_mom else None#月环比
+
         deal_unit_price = average_price.xpath('./li[2]//div/h3/i/text()').extract_first() #成交均价
         item['deal_unit_price'] = deal_unit_price + '元/m²' if deal_unit_price else None
+        item['deal_unit_mom'] = response.xpath('class="transaction-price"').extract_first() #月环比
 
         item.update(meta_items)
         del meta_items #释放资源

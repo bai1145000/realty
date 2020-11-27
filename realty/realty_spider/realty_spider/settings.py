@@ -87,11 +87,13 @@ DOWNLOAD_DELAY = 0.5  #下载延迟
 # Configure item pipelines
 # See https://docs.scrapy.org/en/latest/topics/item-pipeline.html
 ITEM_PIPELINES = {
-   'realty_spider.realty_spider.pipelines.FangxingErshouPipeline': 300,
-   'realty_spider.realty_spider.pipelines.FangxingXiaoquPipeline': 300,
-   'realty_spider.realty_spider.pipelines.FangxingRentPipeline':300,
+    'realty_spider.realty_spider.pipelines.StringPipeline':300,  #str清洗
+    'realty_spider.realty_spider.pipelines.FangxingErshouPipeline': 300,
+    'realty_spider.realty_spider.pipelines.FangxingXiaoquPipeline': 300,
+    'realty_spider.realty_spider.pipelines.FangxingRentPipeline':300,
+     'realty_spider.realty_spider.pipelines.SavePipine':300  #保存
     # 'realty_spider.realty_spider.pipelines.FangxingSchoolPipeline':300
-  #  'realty_spider.realty_spider.pipelines.ZhugeXiaoquPipeline': 300
+    #  'realty_spider.realty_spider.pipelines.ZhugeXiaoquPipeline': 300
 }
 
 # Enable and configure the AutoThrottle extension (disabled by default)

@@ -9,17 +9,28 @@ class FangxingSpider(scrapy.Spider):
     name = 'fangxing'
     allowed_domains = ['fangstar.com']
     queryset = FangxingErshouShangpu.objects.all()
+
+    def __init__(self,method=None,*args, **kwargs):
+        super(FangxingSpider,self).__init__(*args, **kwargs)
+        self.method = method
+
     def start_requests(self):
         # for i in 
         urls = 'https://www.fangstar.com/ershoufang/'
-        for i in ['guanduqu','wuhuaqu','lanlongqu','chenggongqu','ans','jnq','smx','ylx','fnx','xishangqu',]:
+        for i in ['chenggongqu','ans','jnq','smx','ylx','fmx','guanduqu','wuhuaqu','lanlongqu','xishanqu',]:
             url = urls + i
             yield scrapy.Request(
                     url=url,
                     callback= self.parse
                 )
+    def parse(self,response):
+        '''二级地区'''
+        dd_list = response.xpath('//*[@class="cl trading-area"]/dd')
+        for dd in dd_list[1:]:
+            url = dd.xpath('./a/@href').extract_first()
+            yield scrapy.Request(url=url,callback= self.list) #二级地区回调
 
-    def parse(self, response):
+    def list(self, response):
         '''列表页'''
         dd_list = response.xpath('//*[@class="cl trading-area"]/dd')
         for dd in dd_list:
@@ -48,7 +59,7 @@ class FangxingSpider(scrapy.Spider):
         #下一页
         next_url = response.xpath('//*[@class = "tcdPageCode"]/a[last()]/@href').extract_first()
         if next_url:
-            yield scrapy.Request(response.urljoin(next_url), callback= self.parse)
+            yield scrapy.Request(response.urljoin(next_url), callback= self.list)
 
 
     def parse_details(self,response):
